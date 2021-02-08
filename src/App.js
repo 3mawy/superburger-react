@@ -5,8 +5,8 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import Header from './components/Header';
-import Footer from "./components/Footer";
+import Header from './components/Header/Header';
+import Footer from "./components/Footer/Footer";
 import AboutUS from "./pages/AboutUs";
 import CheckOut from "./pages/CheckOut";
 import ContactUs from "./pages/ContactUs";
@@ -16,9 +16,8 @@ import Offers from "./pages/Offers";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 import ItemsSingle from "./pages/ItemsSingle";
-import './components/css/bootstrap.css'
-import './components/css/bootstrap_customized.css'
-import './components/css/style.css'
+
+import './css/style.css'
 
 function App() {
   return (

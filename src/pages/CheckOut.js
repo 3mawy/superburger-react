@@ -1,5 +1,5 @@
-import '../components/css/order-sign_up.css'
-import '../components/css/detail-page.css'
+import '../css/order-sign_up.css'
+import '../css/detail-page.css'
 
 const CheckOut = () => {
     return (
@@ -59,7 +59,7 @@ const CheckOut = () => {
                             </div>
                             <div className="main">
                                 <div className="payment_select">
-                                    <label className="container_radio">Credit Card
+                                    <label className="container_radio">Credit CardItemOld
                                         <input type="radio" value="" checked name="payment_method"/>
                                             <span className="checkmark"></span>
                                     </label>
@@ -71,9 +71,9 @@ const CheckOut = () => {
                                            name="name_card_order" placeholder="First and last name"/>
                                 </div>
                                 <div className="form-group">
-                                    <label>Card number</label>
+                                    <label>CardItemOld number</label>
                                     <input type="text" id="card_number" name="card_number" className="form-control"
-                                           placeholder="Card number"/>
+                                           placeholder="CardItemOld number"/>
                                 </div>
                                 <div className="row">
                                     <div className="col-md-6">

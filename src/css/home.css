@@ -42,7 +42,7 @@
 }
 .intro_txt:before {
   content: '';
-  background: url(../img/shape_element_2.svg) no-repeat 0 0;
+  background: url(../components/img/shape_element_2.svg) no-repeat 0 0;
   position: absolute;
   display: block;
   width: 195px;
@@ -230,7 +230,7 @@
 .header-video .shape_element {
   position: absolute;
   z-index: 9;
-  background: url(../img/shape_element_1.svg) no-repeat;
+  background: url(../components/img/shape_element_1.svg) no-repeat;
 }
 @media (max-width: 767px) {
   .header-video .shape_element {
@@ -283,7 +283,7 @@
 
 @media (max-width: 1024px) {
   #hero_video {
-    background: #ededed url(../img/home_section_1.jpg) center center no-repeat;
+    background: #ededed url(../components/img/home_section_1.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

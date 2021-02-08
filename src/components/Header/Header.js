@@ -3,7 +3,7 @@ import {
 } from "react-router-dom";
 
 
-import logo from './img/logo_sticky.svg'
+import logo from '../img/logo_sticky.svg'
 
 const Header = (props) => {
     return (
@@ -23,21 +23,21 @@ const Header = (props) => {
                                 <div className="dropdown-menu">
                                     <ul>
                                         <li>
-                                            <figure><img src={require("./img/menu-thumb-placeholder.jpg")}
+                                            <figure><img src={require("../img/menu-thumb-placeholder.jpg")}
                                                          data-src="img/menu-thumb-1.jpg" alt="" width="50" height="50"
                                                          className="lazy"></img></figure>
                                             <strong><span>1x Pizza Napoli</span>$12.00</strong>
                                             <a href="#0" className="action"><i className="icon_trash_alt"></i></a>
                                         </li>
                                         <li>
-                                            <figure><img src="img/menu-thumb-placeholder.jpg"
+                                            <figure><img src="../img/menu-thumb-placeholder.jpg"
                                                          data-src="img/menu-thumb-2.jpg" alt="" width="50" height="50"
                                                          className="lazy"></img></figure>
                                             <strong><span>1x Hamburger Maxi</span>$10.00</strong>
                                             <a href="#0" className="action"><i className="icon_trash_alt"></i></a>
                                         </li>
                                         <li>
-                                            <figure><img src="img/menu-thumb-placeholder.jpg"
+                                            <figure><img src="../img/menu-thumb-placeholder.jpg"
                                                          data-src="img/menu-thumb-3.jpg" alt="" width="50" height="50"
                                                          className="lazy"></img></figure>
                                             <strong><span>1x Red Wine Bottle</span>$20.00</strong>
@@ -62,7 +62,7 @@ const Header = (props) => {
                             <a href="#0" className="open_close">
                                 <i className="icon_close"></i><span>Menu</span>
                             </a>
-                            <a href="index.html"><img src="img/logo.svg" width="162" height="35" alt=""></img></a>
+                            <a href="index.html"><img src="../img/logo.svg" width="162" height="35" alt=""></img></a>
                         </div>
                         <ul>
                             <li className="submenu">
@@ -70,7 +70,7 @@ const Header = (props) => {
                                 <ul>
                                     <li><NavLink to="/about-us">About Us</NavLink></li>
                                     <li><NavLink to="/checkout">Checkout</NavLink></li>
-                                    <li><a href="index-3.html">Home Version 2</a></li>
+                                    <li><NavLink to="/items-list">Items List</NavLink></li>
                                     <li><a href="index-4.html">Video Background</a></li>
                                     <li><a href="index-5.html">GDPR Cookie Bar EU Law</a></li>
                                     <li><a href="header-user-logged.html">Header User Logged</a></li>

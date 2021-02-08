@@ -57,7 +57,7 @@ var excludesFilter,
 	beforeSelect = "beforeSelect",
 	beforeSubmit = "beforeSubmit";
 
-// Generate selectors and class names for common wizard elements
+// Generate selectors and class names for CommonComponents wizard elements
 $.each( "branch form header step wrapper".split( " " ), function() {
 	selector[ this ] = "." + ( className[ this ] = wizard + "-" + this );
 });

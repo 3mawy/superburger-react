@@ -163,7 +163,7 @@
         }
     };
 
-    // make available to common module loader
+    // make available to CommonComponents module loader
     if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
         module.exports = ResizeSensor;
     }

@@ -638,7 +638,7 @@ function InfoBox(opt_opts) {
 
   google.maps.OverlayView.apply(this, arguments);
 
-  // Standard options (in common with google.maps.InfoWindow):
+  // Standard options (in CommonComponents with google.maps.InfoWindow):
   //
   this.content_ = opt_opts.content || "";
   this.disableAutoPan_ = opt_opts.disableAutoPan || false;
