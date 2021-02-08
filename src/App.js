@@ -18,12 +18,14 @@ import Register from "./pages/Register";
 import ItemsSingle from "./pages/ItemsSingle";
 
 import './css/style.css'
+import Title from "./components/CommonComponents/Title/Title";
 
 function App() {
   return (
     <Router>
         <div className='containerfluid'>
           <Header title="aaa"/>
+          <Title title="ام سأسأ قرعه"/>
           <main className="bg_gray">
               <Route path="/about-us" component={AboutUS}/>
               <Route path="/checkout" component={CheckOut}/>
