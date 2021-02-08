@@ -2,87 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae5756c1-7620-482a-a815-3fcbe6225953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/logo192new.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/common_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/common_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/main_map_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/main_map_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/main_mapfull_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/main_mapfull_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/single_files/ResizeSensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/single_files/ResizeSensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/single_files/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/single_files/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/single_files/infobox.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/single_files/infobox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/single_files/jquery-ui.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/single_files/jquery-ui.custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/single_files/jquery-ui.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/single_files/jquery-ui.custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/single_files/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/single_files/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/sticky_sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/sticky_sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/wizard/jquery.wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/wizard/jquery.wizard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/wizard/wizard_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/js/wizard/wizard_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/common_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/common_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main_map_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main_map_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main_mapfull_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main_mapfull_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/single_files/ResizeSensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/single_files/ResizeSensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/single_files/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/single_files/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/single_files/infobox.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/single_files/infobox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/single_files/jquery-ui.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/single_files/jquery-ui.custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/single_files/jquery-ui.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/single_files/jquery-ui.custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/single_files/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/single_files/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/sticky_sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/sticky_sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/wizard/jquery.wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/wizard/jquery.wizard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/wizard/wizard_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/wizard/wizard_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroCarosuel/HeroCarousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroImage/HeroImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HighlightsBrand.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HighlightsBrand/HighlightsBrand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HighlightsCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HighlightsCategories/HighlightsCategories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HighlightsItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Highlightsitems.js/HighlightsItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Ingredients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ingredients/Ingredients.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/bootstrap_customized.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/bootstrap_customized.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/contacts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/contacts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/detail-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/detail-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/error.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/error.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/help.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/ElegantIcons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/ElegantIcons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/ElegantIcons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/ElegantIcons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/ElegantIcons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/ElegantIcons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/ElegantIcons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/ElegantIcons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/Glyphter.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/Glyphter.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/Glyphter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/Glyphter.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/Glyphter.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/Glyphter.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/Glyphter.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/Glyphter.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/food.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/food.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/food.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/food.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/food.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/food.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icon_fonts/font/food.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icon_fonts/font/food.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/icons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/images/ui-icons_444444_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/ui-icons_444444_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/images/ui-icons_555555_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/ui-icons_555555_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/images/ui-icons_777620_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/ui-icons_777620_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/images/ui-icons_777777_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/ui-icons_777777_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/images/ui-icons_cc0000_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/ui-icons_cc0000_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/images/ui-icons_ffffff_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/ui-icons_ffffff_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/leaflet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leaflet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/listing.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/listing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/order-sign_up.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/order-sign_up.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/review.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/review.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/submit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/submit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/css/wizard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/wizard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Banner/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Banner/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Title/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CheckOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CheckOut.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/ItemsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ItemsList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,11 +47,11 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/CommonComponents/Title" />
       <recent name="$PROJECT_DIR$/src/components/CommonComponents/Banner" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/Header" />
       <recent name="$PROJECT_DIR$/src/components/HeroCarosuel" />
-      <recent name="$PROJECT_DIR$/src/components/HeroImage" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -139,7 +65,7 @@
       <workItem from="1612285205008" duration="1701000" />
       <workItem from="1612297436325" duration="10736000" />
       <workItem from="1612621036978" duration="11401000" />
-      <workItem from="1612673519887" duration="29000000" />
+      <workItem from="1612673519887" duration="29820000" />
     </task>
     <servers />
   </component>
