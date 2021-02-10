@@ -1,4 +1,3 @@
-import "../../css/home.css"
 
 const HighlightsItems = () => {
     return (

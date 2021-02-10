@@ -2,7 +2,7 @@ const Footer = () => {
     return (
         <>
             <footer>
-                <div className="wave footer"></div>
+                <div className="wave gray footer"></div>
                 <div className="container margin_60_40 fix_mobile">
 
                     <div className="row">

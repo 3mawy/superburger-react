@@ -1,5 +1,6 @@
 import {Col, Container, Row} from "react-bootstrap";
 import CardItem from "./CardItem";
+import CardWithText from "./CardWithText/CardWithText";
 
 let items = [
     { id: 1, item: "Dog" },
@@ -20,7 +21,7 @@ const CardsList = (props) => {
                         <Container >
                             {/*<br/>*/}
                             <Row  className="justify-content-end" lg={props.row_size} md={3} sm={3} xs={2}>
-                                {res.map((item, index) => <Col ><CardItem key={item.id}>{item}</CardItem></Col>)}
+                                {res.map((item, index) => <CardItem key={item.id}>{item}</CardItem>)}
                             </Row>
                         </Container>
                     )

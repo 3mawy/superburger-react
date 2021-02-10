@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import Header from './components/Header/Header';
+import NavBar from './components/NavBar/NavBar';
 import Footer from "./components/Footer/Footer";
 import AboutUS from "./pages/AboutUs";
 import CheckOut from "./pages/CheckOut";
@@ -14,19 +14,23 @@ import ErrorPage from "./pages/ErrorPage";
 import ItemsList from "./pages/ItemsList";
 import Offers from "./pages/Offers";
 import Profile from "./pages/Profile";
-import Register from "./pages/Register";
+import SignIn from "./pages/SignIn";
 import ItemsSingle from "./pages/ItemsSingle";
 
 import './css/style.css'
+import './css/home.css'
+
 import Title from "./components/CommonComponents/Title/Title";
+import ConfirmedOrder from "./pages/ConfirmedOrder/ConfirmedOrder";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <Router>
-        <div className='containerfluid'>
-          <Header title="aaa"/>
-          <Title title="ام سأسأ قرعه"/>
+        <NavBar title="aaa"/>
+        <Title title="ام اوفا قرعه"/>
           <main className="bg_gray">
+              <Route exact path="/" component={Home}/>
               <Route path="/about-us" component={AboutUS}/>
               <Route path="/checkout" component={CheckOut}/>
               <Route path="/contact-us" component={ContactUs}/>
@@ -35,10 +39,10 @@ function App() {
               <Route path="/items-single" component={ItemsSingle}/>
               <Route path="/offers" component={Offers}/>
               <Route path="/profile" component={Profile}/>
-              <Route path="/register" component={Register}/>
+              <Route path="/register" component={SignIn}/>
+              <Route path="/confirm" component={ConfirmedOrder}/>
           </main>
-          <Footer />
-        </div>
+        <Footer />
     </Router>
 
   )

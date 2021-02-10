@@ -3,7 +3,6 @@ import {
 } from "react-router-dom";
 
 
-import "../../css/home.css"
 import figure1 from '../img/how_1.svg'
 import figure2 from '../img/how_2.svg'
 import figure3 from '../img/how_3.svg'

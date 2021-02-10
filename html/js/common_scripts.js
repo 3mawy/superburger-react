@@ -11174,7 +11174,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ;(function (factory) { 
 if (typeof define === 'function' && define.amd) { 
- // AMD. Register as an anonymous module. 
+ // AMD. SignIn as an anonymous module.
  define(['jquery'], factory); 
  } else if (typeof exports === 'object') { 
  // Node/CommonJS 
@@ -13037,7 +13037,7 @@ $.magnificPopup.registerModule(RETINA_NS, {
  (function (factory) {
 
   if (typeof define === 'function' && define.amd) {
-    // AMD. Register as an anonymous module.
+    // AMD. SignIn as an anonymous module.
     define(['jquery'], factory);
   } else if (typeof exports === 'object') {
     // Node/CommonJS

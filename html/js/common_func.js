@@ -7,7 +7,7 @@
 	    elements_selector: ".lazy"
 	});
 
-	// Header background
+	// NavBar background
 	$('.background-image').each(function(){
 		$(this).css('background-image', $(this).attr('data-background'));
 	});

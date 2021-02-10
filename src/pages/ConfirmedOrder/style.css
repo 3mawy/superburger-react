@@ -1,0 +1,7 @@
+.path {
+    stroke-dasharray:50px, 50px; stroke-dashoffset: 0px;
+}
+
+.circle {
+    stroke-dasharray:240px, 240px; stroke-dashoffset: 480px;
+}

@@ -4,7 +4,7 @@ Theme URI: http://www.ansonika.com/fooyes/
 Author: Ansonika
 Author URI: http://themeforest.net/user/Ansonika/
 
-[Table of contents] 
+[Table of contents]
 
 0. ICONS
 
@@ -1764,7 +1764,7 @@ a:hover, a:focus {
   padding-left: 5px !important;
 }
 
-/* Header */
+/* NavBar */
 header {
   position: fixed;
   left: 0;
@@ -4063,7 +4063,22 @@ header.black_nav .dropdown.user a:hover {
 /*.promo.mb_30 {*/
 /*  margin-bottom: 30px;*/
 /*}*/
-
+@media screen and (max-width: 770px) {
+ .container{
+   min-width:100% !important;
+   max-width:100% !important;
+   padding-left:.2rem !important;
+   padding-right:.2rem !important;
+ }
+}
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+ .container{
+   min-width:100% !important;
+   max-width:100% !important;
+   padding-left:.5rem !important;
+   padding-right:.5rem !important;
+ }
+}
 .bg_gray {
   background-color: #f9fafb;
 }
