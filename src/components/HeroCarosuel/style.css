@@ -1,3 +1,16 @@
 .hero-carousel{
     height: 370px;
 }
+.carousel-item {
+    height: 19rem;
+}
+@media (max-width: 1000px) {
+.carousel-item {
+    height: 12rem;
+}
+}
+@media (max-width: 600px) {
+.carousel-item {
+    height: 7.5rem;
+}
+}
