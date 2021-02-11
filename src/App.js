@@ -20,7 +20,6 @@ import ItemsSingle from "./pages/ItemsSingle";
 import './css/style.css'
 import './css/home.css'
 
-import Title from "./components/CommonComponents/Title/Title";
 import ConfirmedOrder from "./pages/ConfirmedOrder/ConfirmedOrder";
 import Home from "./pages/Home";
 

@@ -1,9 +1,19 @@
+import {
+  NavLink,
+} from "react-router-dom";
+import {useState} from "react";
 
 const NavCart = () => {
+
+    const [cartState, setToggleState] = useState("");
+    function cartToggle() {
+        setToggleState(cartState === "" ? "show" : "");
+    }
+
     return (
-        <div className="dropdown dropdown-cart">
-            <a href="cart.html" className="cart_bt"><strong>2</strong></a>
-            <div className="dropdown-menu">
+        <div className={`dropdown dropdown-cart `}>
+            <a href="#" onClick={cartToggle} className="cart_bt"><strong>2</strong></a>
+            <div className={`dropdown-menu ${cartState}`}>
                 <ul>
                     <li>
                         <figure><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-1.jpg" alt=""
@@ -26,8 +36,8 @@ const NavCart = () => {
                 </ul>
                 <div className="total_drop">
                     <div className="clearfix add_bottom_15"><strong>Total</strong><span>$32.00</span></div>
-                    <a href="order.html" className="btn_1 outline">View Cart</a><a href="order.html"
-                                                                                   className="btn_1">Checkout</a>
+                    <NavLink to="/checkout" className="btn_1 outline">View Cart</NavLink>
+                    <NavLink to="/checkout" className="btn_1">Checkout</NavLink>
                 </div>
             </div>
         </div>

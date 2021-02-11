@@ -4,7 +4,11 @@
     <list default="true" id="ae5756c1-7620-482a-a815-3fcbe6225953" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OwlCarousel/MyOwlCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OwlCarousel/MyOwlCarousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +73,7 @@
       <workItem from="1612621036978" duration="11401000" />
       <workItem from="1612673519887" duration="36197000" />
       <workItem from="1612898431710" duration="2547000" />
-      <workItem from="1612958986233" duration="41881000" />
+      <workItem from="1612958986233" duration="47937000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,16 @@
 import {
   NavLink,
 } from "react-router-dom";
-
+import { useState } from "react";
 
 import logo from '../img/logo_sticky.svg'
 import NavCart from "./NavCart";
-
 const NavBar = (props) => {
+    const [menuState, setToggleState] = useState("");
+    function sideNavToggle() {
+        setToggleState(menuState === "" ? "show" : "");
+    }
+
     return (
             <header className=" header_in clearfix">
                 <div className="container">
@@ -18,16 +22,16 @@ const NavBar = (props) => {
                     <div className="layer"></div>
                     <ul id="top_menu">
                         <li><NavLink to="/register" id="sign-in" className="login">Sign In</NavLink></li>
-                        <li>
+                        <li >
                             <NavCart/>
                         </li>
                     </ul>
-                    <a href="#0" className="open_close">
+                    <a href="#0" className="open_close" onClick={sideNavToggle}>
                         <i className="icon_menu"></i><span>Menu</span>
                     </a>
-                    <nav className="main-menu">
+                    <nav className={`main-menu ${menuState}`} >
                         <div id="header_menu">
-                            <a href="#0" className="open_close">
+                            <a href="#0" className="open_close" onClick={sideNavToggle}>
                                 <i className="icon_close"></i><span>Menu</span>
                             </a>
                             <a href="index.html"><img src="../img/logo.svg" width="162" height="35" alt=""></img></a>
