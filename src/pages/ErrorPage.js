@@ -1,7 +1,9 @@
 import error from "../components/img/404.svg"
+import {Container} from "react-bootstrap";
 
 const ErrorPage = () => {
     return (
+        <Container>
             <div id="error_page">
                 <div className="container">
                     <div className="row justify-content-center text-center">
@@ -26,6 +28,8 @@ const ErrorPage = () => {
                     </div>
                 </div>
             </div>
+        </Container>
+
     )
 }
 

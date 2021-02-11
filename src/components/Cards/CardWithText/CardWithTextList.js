@@ -19,9 +19,9 @@ let res = items.map(o => o.item);
 
 const CardWithTextList = (props) => {
     return (
-        <Container>
+        <Container fluid className="p-0">
             <br/>
-            <Row  className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2}>
+            <Row  className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2} >
             {res.map((item, index) => <CardWithText key={item.id} name={"Cheesy Cheesy"} price={"45"}>{item}</CardWithText>)}
             </Row>
         </Container>

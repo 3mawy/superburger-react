@@ -4,7 +4,7 @@ import {Col, Row, Button} from "react-bootstrap";
 
 const CardWithText = (props) => {
     return (
-        <Col >
+        <Col className="p-0 pr-2 pl-2" >
             <div className=" card-with-side-text " style={{border: "0", marginBottom:"1rem"}}>
                 <Row className=" no-gutters">
                     <Col className="col-auto img-wrapper" >

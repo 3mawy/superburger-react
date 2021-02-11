@@ -28,7 +28,6 @@ function App() {
   return (
     <Router>
         <NavBar title="aaa"/>
-        <Title title="ام اوفا قرعه"/>
           <main className="bg_gray">
               <Route exact path="/" component={Home}/>
               <Route path="/about-us" component={AboutUS}/>

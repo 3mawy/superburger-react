@@ -15,7 +15,7 @@ let items = [
   ];
 let res = items.map(o => o.item);
 
-const CardsList = (props) => {
+const CardList = (props) => {
                     // let arrays = SpliceItemsIntoArrays(items, props.row_size)
                     return (
                         <Container >
@@ -27,5 +27,5 @@ const CardsList = (props) => {
                     )
 }
 
-export default CardsList
+export default CardList
 
