@@ -1,10 +1,52 @@
 /* NavBar Logo */
 
 .logo-super {
-  height: 130px;
+  transition: all 0.3s ease-in-out;
+  height: 115px;
   width: auto;
   margin-top: -13px;
 }
+
+header.scrolled {
+  padding: 10px 0;
+  height: 50px;
+  background-color: #fff;
+position: relative;
+border-bottom: 1px solid #ededed;
+}
+
+img.scrolled {
+    height: 90px;
+}
+
+nav.main-menu.scrolled {
+  top: auto;
+}
+
+ul.top_menu.scrolled {
+    margin-top: -6px !important;
+
+}
+.nav-contact-us.scrolled{
+  height: 27px;
+}
+/* nav-contact-us */
+
+.nav-contact-us {
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+
+}
+@media (max-width: 991px) {
+  .nav-contact-us {
+    height: 28px;
+
+  }
+}
+.nav-gradient {
+  background-image: linear-gradient(to right, #f2824c, #f2ad7a, #f2824c);
+}
+
 
 /* NavBar */
 header {
@@ -116,6 +158,7 @@ header.sticky a.open_close:hover,
   transform: translateX(-50%);
   left: 50%;
   position: absolute;
+  z-index: 10;
 }
 @media (max-width: 991px) {
   #logo {
@@ -125,7 +168,7 @@ header.sticky a.open_close:hover,
   }
   #logo img {
     width: auto;
-    height: 70px;
+    height: 85px;
     margin-top: -7px;
   }
 }
@@ -603,3 +646,4 @@ ul#top_menu li a.login {
 ul#top_menu li a.login:before {
   content: '\0042';
 }
+

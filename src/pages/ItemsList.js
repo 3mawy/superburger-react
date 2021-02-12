@@ -9,7 +9,7 @@ import CardWithTextList from "../components/Cards/CardWithText/CardWithTextList"
 
 const ItemsList = () => {
     return (
-        <Container>
+        <Container className={`pt-4`}>
             <Row>
                 <Col lg={3}>
                 <Sidebar/>

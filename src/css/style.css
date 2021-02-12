@@ -5391,3 +5391,17 @@ a.box_topic.submit h3,
   border: 0;
   margin-bottom: 5px;
 }
+
+
+/* mine */
+
+.header-fix-padding {
+   padding-top: 97px
+}
+
+@media (max-width: 991px) {
+  .header-fix-padding {
+   padding-top: 78px
+}
+
+}

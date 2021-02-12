@@ -22,12 +22,13 @@ import './css/home.css'
 
 import ConfirmedOrder from "./pages/ConfirmedOrder/ConfirmedOrder";
 import Home from "./pages/Home";
+import NavContactUs from "./components/NavBar/NavContactUs";
 
 function App() {
   return (
     <Router>
         <NavBar title="aaa"/>
-          <main className="bg_gray">
+          <main className="bg_gray header-fix-padding">
               <Route exact path="/" component={Home}/>
               <Route path="/about-us" component={AboutUS}/>
               <Route path="/checkout" component={CheckOut}/>
