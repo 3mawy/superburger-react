@@ -4,11 +4,8 @@
     <list default="true" id="ae5756c1-7620-482a-a815-3fcbe6225953" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/HeroCarosuel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/NavBar" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -46,11 +43,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/NavBar" />
       <recent name="$PROJECT_DIR$/src/components/HeroCarosuel" />
       <recent name="$PROJECT_DIR$/src/components/Cards/CardWithText" />
       <recent name="$PROJECT_DIR$/src/components/CommonComponents/Banner" />
       <recent name="$PROJECT_DIR$/src/components/Cards" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/css/scss" />
@@ -73,7 +70,8 @@
       <workItem from="1612621036978" duration="11401000" />
       <workItem from="1612673519887" duration="36197000" />
       <workItem from="1612898431710" duration="2547000" />
-      <workItem from="1612958986233" duration="47937000" />
+      <workItem from="1612958986233" duration="49177000" />
+      <workItem from="1613143050974" duration="5880000" />
     </task>
     <servers />
   </component>
