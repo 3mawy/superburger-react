@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae5756c1-7620-482a-a815-3fcbe6225953" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +69,7 @@
       <workItem from="1612673519887" duration="36197000" />
       <workItem from="1612898431710" duration="2547000" />
       <workItem from="1612958986233" duration="49177000" />
-      <workItem from="1613143050974" duration="5880000" />
+      <workItem from="1613143050974" duration="6613000" />
     </task>
     <servers />
   </component>
