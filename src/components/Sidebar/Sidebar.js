@@ -1,6 +1,6 @@
 import "../../css/listing.css"
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return (
         <aside id="sidebar_fixed">
             <br/>
@@ -25,10 +25,10 @@ const Sidebar = () => {
             <a href="#0" className="open_filters btn_filters"><i
                 className="icon_adjust-vert"></i><span>Filters</span></a>
 
-            <div className="filter_col">
+            <div className={`filter_col ${props.color}`}>
                 <div className="inner_bt clearfix">Filters<a href="#" className="open_filters"><i
                     className="icon_close"></i></a></div>
-                <div className="filter_type">
+                <div className="filter_type " >
                     <h4><a href="#filter_1" data-toggle="collapse" className="opened">Sort</a></h4>
                     <div className="collapse show" id="filter_1">
                         <ul>

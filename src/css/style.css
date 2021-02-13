@@ -3399,6 +3399,7 @@ header.black_nav .dropdown.user a:hover {
 .wave:before {
   opacity: 0.4;
   animation: waves-reverse 20s linear infinite;
+
 }
 .wave:after {
   opacity: 0.6;
@@ -3408,6 +3409,7 @@ header.black_nav .dropdown.user a:hover {
 .wave.hero {
   top: auto;
   bottom: 0;
+
 }
 .wave.footer {
   transform: scale(-1, -1);
@@ -3501,6 +3503,7 @@ header.black_nav .dropdown.user a:hover {
 }
 .bg_gray.pattern {
   background: #f4f4f4 url(../components/img/pattern_2.svg) repeat;
+
 }
 .bg_gray.waves_divider {
   position: relative;
@@ -5394,6 +5397,33 @@ a.box_topic.submit h3,
 
 
 /* mine */
+
+.bg_gray {
+  background-color: #f7f8f9;
+}
+
+
+/* dark mode */
+
+.bg_gray.dark {
+  background-color: #1d1d1f;
+  color: #e8e5e5;
+}
+
+h1.dark,
+h2.dark,
+h3.dark,
+h4.dark,
+h5.dark,
+h6.dark{
+  color: #f1f0f0;
+  font-weight: 500;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 
 .header-fix-padding {
    padding-top: 68px;

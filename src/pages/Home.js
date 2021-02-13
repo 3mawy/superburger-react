@@ -9,15 +9,15 @@ import CategoryCardList from "../components/Cards/CategoryCard/CategoryCardList"
 import MyOwlCarousel from "../components/OwlCarousel/MyOwlCarousel";
 import HighlightsBrand from "../components/HighlightsBrand/HighlightsBrand";
 
-const Home = () => {
+const Home = (props) => {
     return (
         <>
             <HeroCarousel/>
-            <Title title="ام اوفا قرعه"/>
+            <Title title="ام اوفا قرعه" color={props.color}/>
             <CategoryCardList/>
-            <Title title="Trending Sandwiches"/>
-            <MyOwlCarousel />
-            <HighlightsBrand />
+            <Title title="Trending Sandwiches" color={props.color}/>
+            <MyOwlCarousel/>
+            <HighlightsBrand/>
         </>
     )
 }

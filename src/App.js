@@ -22,24 +22,72 @@ import './css/home.css'
 
 import ConfirmedOrder from "./pages/ConfirmedOrder/ConfirmedOrder";
 import Home from "./pages/Home";
-import NavContactUs from "./components/NavBar/NavContactUs";
+import {useState} from "react";
+import Button from "react-bootstrap/Button";
+
 
 function App() {
-  return (
+
+        const [colorMode, setcolorModeState] = useState("");
+        function colorModeToggle() {
+            setcolorModeState(colorMode === "" ? "dark" : "");
+        }
+
+    return (
     <Router>
-        <NavBar title="aaa"/>
-          <main className="bg_gray header-fix-padding">
-              <Route exact path="/" component={Home}/>
-              <Route path="/about-us" component={AboutUS}/>
-              <Route path="/checkout" component={CheckOut}/>
-              <Route path="/contact-us" component={ContactUs}/>
-              <Route path="/error" component={ErrorPage}/>
-              <Route path="/items-list" component={ItemsList}/>
-              <Route path="/items-single" component={ItemsSingle}/>
-              <Route path="/offers" component={Offers}/>
-              <Route path="/profile" component={Profile}/>
-              <Route path="/register" component={SignIn}/>
-              <Route path="/confirm" component={ConfirmedOrder}/>
+        <Button className={`offers_btn btn_1 pulse_bt m-3 pt-2  pl-4 `}
+                style={{position: "absolute", zIndex: "99999999"}}
+                onClick={colorModeToggle}>دوس عليا يا مادا
+        </Button>
+
+        <NavBar title="aaa">
+
+        </NavBar>
+          <main className={`bg_gray ${colorMode} header-fix-padding`} >
+              <Route exact path="/" render={(props) => (
+                <Home {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/about-us" render={(props) => (
+                <AboutUS {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/checkout" render={(props) => (
+                <CheckOut {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/contact-us" render={(props) => (
+                <ContactUs {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/error" render={(props) => (
+                <ErrorPage {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/items-list" render={(props) => (
+                <ItemsList {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/items-single" render={(props) => (
+                <ItemsSingle {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/offers" render={(props) => (
+                <Offers {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/profile" render={(props) => (
+                <Profile {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/register" render={(props) => (
+                <SignIn {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/confirm" render={(props) => (
+                <ConfirmedOrder {...props} color={colorMode} />
+                )}/>
+
           </main>
         <Footer />
     </Router>
@@ -48,6 +96,17 @@ function App() {
 }
 
 export default App
+
+              {/*<Route path="/about-us" component={AboutUS}/>*/}
+              {/*<Route path="/checkout" component={CheckOut}/>*/}
+              {/*<Route path="/contact-us" component={ContactUs}/>*/}
+              {/*<Route path="/error" component={ErrorPage}/>*/}
+              {/*<Route path="/items-list" component={ItemsList}/>*/}
+              {/*<Route path="/items-single" component={ItemsSingle}/>*/}
+              {/*<Route path="/offers" component={Offers}/>*/}
+              {/*<Route path="/profile" component={Profile}/>*/}
+              {/*<Route path="/register" component={SignIn}/>*/}
+              {/*<Route path="/confirm" component={ConfirmedOrder}/>*/}
 
 //
 // class App extends Component {

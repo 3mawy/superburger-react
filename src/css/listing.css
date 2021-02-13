@@ -234,6 +234,14 @@ a.btn_filters i {
   line-height: 1;
   position: relative;
 }
+
+/* dark mode */
+
+.filter_col.dark h4 a  {
+  color: rgb(236, 236, 236);
+}
+
+
 .filter_type h4 a:after {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
