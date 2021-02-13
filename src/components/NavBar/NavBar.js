@@ -7,7 +7,7 @@ import { useState, useEffect} from "react";
 import "./style.css"
 import logo from './logo_final-trimmy.png'
 import NavCart from "./NavCart";
-import {Container} from "react-bootstrap";
+import {Col, Container} from "react-bootstrap";
 import NavContactUs from "./NavContactUs";
 
 const NavBar = (props) => {
@@ -72,7 +72,11 @@ const NavBar = (props) => {
                                     <li><a href="header-cart-top.html">Header Cart Top</a></li>
                                 </ul>
                             </li>
-                            <li><NavLink to="/offers">OFFERS</NavLink></li>
+                            <li>
+                                <NavLink to="/offers" className="btn-primary btn_1  pulse_bt mb-1 ml-1 pt-2  pl-4"
+                                         style={{color: "white", paddingBottom:".72rem", backgroundColor: "#c63a42"}}>
+                                    OFFERS
+                                </NavLink></li>
                         </ul>
 
                     </nav>

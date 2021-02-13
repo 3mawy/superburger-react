@@ -37,7 +37,7 @@ ul.top_menu.scrolled {
 .nav-contact-us {
   height: 34px;
   transition: all 0.2s ease-in-out;
-  background-color: #b5353c !important;
+  background-color: #c63a42 !important;
   border-radius:  0px 0px 35px 35px;
   box-shadow: 0px 4px 2px 1px rgba(14, 14, 17, 0.2);
 }
@@ -214,7 +214,7 @@ header.sticky a.open_close:hover,
   color: #fff;
   padding: 0 23px 10px  8px;
   font-size: 14px;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 500;
 }
 .main-menu > ul > li.black > ul > li > a {
@@ -240,7 +240,7 @@ header.sticky .main-menu > ul > li:hover > a, header.header_in .main-menu > ul >
 ================================================== */
 @media only screen and (min-width: 992px) {
   .main-menu {
-    transform: translateX(-55.7%);
+    transform: translateX(-54.4%);
     left: 50%;
     position: absolute;
     width: auto;
