@@ -35,10 +35,10 @@ function App() {
 
     return (
     <Router>
-        <Button className={`offers_btn btn_1 pulse_bt m-3 pt-2  pl-4 `}
+        <a className={`offers_btn btn_1 pulse_bt m-3 pt-2  pl-4 `}
                 style={{position: "absolute", zIndex: "99999999"}}
                 onClick={colorModeToggle}>دوس عليا يا مادا
-        </Button>
+        </a>
 
         <NavBar title="aaa">
 
