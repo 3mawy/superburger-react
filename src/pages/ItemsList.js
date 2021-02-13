@@ -9,8 +9,8 @@ import CardWithTextList from "../components/Cards/CardWithText/CardWithTextList"
 
 const ItemsList = () => {
     return (
-        <Container className={`pt-4`}>
-            <Row>
+        <Container className={`pt-5`}>
+            <Row >
                 <Col lg={3}>
                 <Sidebar/>
                 </Col>
