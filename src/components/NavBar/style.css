@@ -1,6 +1,18 @@
 a:hover{
   text-decoration: none !important;
 }
+
+.offers_btn{
+  padding-bottom:.72rem !important;
+  background-color: #c63a42 !important;
+  color: #efe7e7 !important;
+  text-shadow: 2px 2px #242424;
+}
+.offers_btn:hover{
+  color: #ffffff !important;
+  text-shadow: 2px 2px #a74e03;
+
+}
 /* NavBar Logo */
 
 .logo-super {

@@ -73,8 +73,8 @@ const NavBar = (props) => {
                                 </ul>
                             </li>
                             <li>
-                                <NavLink to="/offers" className="btn-primary btn_1  pulse_bt mb-1 ml-1 pt-2  pl-4"
-                                         style={{color: "white", paddingBottom:".72rem", backgroundColor: "#c63a42"}}>
+                                <NavLink to="/offers" className="offers_btn btn_1  pulse_bt mb-1 ml-1 pt-2  pl-4"
+                                         >
                                     OFFERS
                                 </NavLink></li>
                         </ul>
