@@ -1835,7 +1835,7 @@ a:hover, a:focus {
   color: #555;
 }
 .hero_single .search_trends ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .hero_single.version_1 {
   height: 620px;

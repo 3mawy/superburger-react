@@ -57,11 +57,11 @@ const NavBar = (props) => {
                             <a href="index.html"><img src="../img/logo.svg" width="162" height="35" alt=""></img></a>
                         </div>
                         <ul>
-                            <li><NavLink to="/about-us">About Us</NavLink></li>
-                            <li><NavLink to="/about-us">About Us</NavLink></li>
+                            <li><NavLink to="/about-us">ABOUT US!</NavLink></li>
+                            <li><NavLink to="/about-us">CONTACT US</NavLink></li>
                             <li style={{width: "190px"}} ></li>
                             <li className="submenu">
-                                <a href="#2" className="show-submenu">Home</a>
+                                <a href="#2" className="show-submenu">MENU</a>
                                 <ul>
                                     <li><NavLink to="/about-us">About Us</NavLink></li>
                                     <li><NavLink to="/checkout">Checkout</NavLink></li>
@@ -72,7 +72,7 @@ const NavBar = (props) => {
                                     <li><a href="header-cart-top.html">Header Cart Top</a></li>
                                 </ul>
                             </li>
-                            <li><NavLink to="/offers">Offers</NavLink></li>
+                            <li><NavLink to="/offers">OFFERS</NavLink></li>
                         </ul>
 
                     </nav>

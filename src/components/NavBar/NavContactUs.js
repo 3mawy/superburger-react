@@ -7,7 +7,7 @@ import "./style.css"
 const NavContactUs = (props) => {
     return (
         <>
-          <Navbar bg="dark"  className={`nav-contact-us nav-gradient ${props.className}`} style={{zIndex:"1000"}}>
+          <Navbar  className={`nav-contact-us  ${props.className}`} style={{zIndex:"1000"}}>
           </Navbar>
           {/*<Navbar bg="dark" className= "p-0" style={{height:"3px"}}>*/}
           {/*</Navbar>*/}
