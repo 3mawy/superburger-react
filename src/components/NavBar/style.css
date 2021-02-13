@@ -240,7 +240,7 @@ header.sticky .main-menu > ul > li:hover > a, header.header_in .main-menu > ul >
 ================================================== */
 @media only screen and (min-width: 992px) {
   .main-menu {
-    transform: translateX(-54.4%);
+    transform: translateX(-53.75%);
     left: 50%;
     position: absolute;
     width: auto;
