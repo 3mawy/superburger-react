@@ -39,10 +39,8 @@ function App() {
                 style={{position: "absolute", zIndex: "99999999"}}
                 onClick={colorModeToggle}>دوس عليا يا مادا
         </a>
+        <NavBar title="aaa" color={colorMode}/>
 
-        <NavBar title="aaa">
-
-        </NavBar>
           <main className={`bg_gray ${colorMode} header-fix-padding`} >
               <Route exact path="/" render={(props) => (
                 <Home {...props} color={colorMode} />

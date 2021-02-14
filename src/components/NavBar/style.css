@@ -1,6 +1,17 @@
 a:hover{
   text-decoration: none !important;
 }
+/*dark mode*/
+header.header_in.dark {
+  background-color: #1e1d1d;
+}
+header.header_in.dark .main-menu > ul > li > a {
+  color: #efe7e7;
+}
+header.header_in.dark ul#top_menu li a {
+    color: #efe7e7;
+
+}
 
 .offers_btn{
   padding-bottom:.72rem !important;
@@ -43,6 +54,9 @@ ul.top_menu.scrolled {
 .nav-contact-us.scrolled{
   height: 27px;
   box-shadow: 0px 2px 2px 1px rgba(14, 14, 17, 0.2);
+}
+.nav-contact-us.dark{
+  background-color: #242424 !important;
 }
 /* nav-contact-us */
 

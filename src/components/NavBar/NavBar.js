@@ -32,7 +32,7 @@ const NavBar = (props) => {
 
     return (
         <nav className="fixed-top">
-            <header className={` header_in clearfix ${scrollState}`}>
+            <header className={` header_in clearfix ${scrollState} ${props.color}`}>
                 <Container className="">
                     <div id="logo">
                         <NavLink to="/" className='m-auto'>
@@ -82,7 +82,7 @@ const NavBar = (props) => {
                     </nav>
                 </Container>
             </header>
-        <NavContactUs className={`${scrollState}`}/>
+        <NavContactUs className={`${scrollState} ${props.color}`}/>
 
         </nav>
 
