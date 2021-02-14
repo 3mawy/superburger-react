@@ -57,7 +57,7 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 20px 75px;
   overflow: hidden;
 }
 .item_version_2 a .info {
