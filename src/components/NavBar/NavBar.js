@@ -49,7 +49,7 @@ const NavBar = (props) => {
                     <a href="#0" className="open_close" onClick={sideNavToggle}>
                         <i className="icon_menu"></i><span>Menu</span>
                     </a>
-                    <nav  className={`main-menu ${menuState} ${scrollState}`} >
+                    <nav  className={`main-menu ${menuState} ${scrollState} ${props.color}`} >
                         <div id="header_menu">
                             <a href="#0" className="open_close" onClick={sideNavToggle}>
                                 <i className="icon_close"></i><span>Menu</span>
@@ -61,20 +61,17 @@ const NavBar = (props) => {
                             <li><NavLink to="/about-us">CONTACT US</NavLink></li>
                             <li style={{width: "190px"}} ></li>
                             <li className="submenu">
-                                <a href="#2" className="show-submenu">MENU</a>
+                                <NavLink to="/menu" className="show-submenu">MENU</NavLink>
                                 <ul>
-                                    <li><NavLink to="/about-us">About Us</NavLink></li>
+                                    <li><NavLink to="/menu/beef">Beef</NavLink></li>
+                                    <li><NavLink to="/menu/chicken">Chicken</NavLink></li>
+                                    <li><NavLink to="/menu/appetizers">appetizers</NavLink></li>
                                     <li><NavLink to="/checkout">Checkout</NavLink></li>
-                                    <li><NavLink to="/items-list">Items List</NavLink></li>
                                     <li><NavLink to="/confirm">confirm order</NavLink></li>
-                                    <li><a href="index-5.html">GDPR Cookie Bar EU Law</a></li>
-                                    <li><a href="header-user-logged.html">Header User Logged</a></li>
-                                    <li><a href="header-cart-top.html">Header Cart Top</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <NavLink to="/offers" className="offers_btn btn_1  pulse_bt mb-1 ml-1 pt-2  pl-4"
-                                         >
+                                <NavLink to="/offers" className="offers_btn btn_1  pulse_bt mb-1 ml-1 pt-2  pl-4">
                                     OFFERS
                                 </NavLink></li>
                         </ul>

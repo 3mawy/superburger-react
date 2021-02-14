@@ -62,9 +62,23 @@ function App() {
                 <ErrorPage {...props} color={colorMode} />
                 )}/>
 
-              <Route path="/items-list" render={(props) => (
+        {/*Menu routes*/}
+              <Route path="/menu" render={(props) => (
                 <ItemsList {...props} color={colorMode} />
                 )}/>
+
+              <Route path="/menu/beef" render={(props) => (
+                <ItemsList {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/menu/chicken" render={(props) => (
+                <ItemsList {...props} color={colorMode} />
+                )}/>
+
+              <Route path="/menu/appetizers" render={(props) => (
+                <ItemsList {...props} color={colorMode} />
+                )}/>
+        {/*Menu routes end*/}
 
               <Route path="/items-single" render={(props) => (
                 <ItemsSingle {...props} color={colorMode} />

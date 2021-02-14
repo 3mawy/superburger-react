@@ -12,6 +12,17 @@ header.header_in.dark ul#top_menu li a {
     color: #efe7e7;
 
 }
+.main-menu.dark ul ul {
+    background-color: #242424;
+}
+.main-menu.dark ul ul > li > a{
+  color: #efe7e7;
+}
+
+.nav-contact-us.dark{
+  background-color: #242424 !important;
+}
+/*dark mode end*/
 
 .offers_btn{
   padding-bottom:.72rem !important;
@@ -55,9 +66,7 @@ ul.top_menu.scrolled {
   height: 27px;
   box-shadow: 0px 2px 2px 1px rgba(14, 14, 17, 0.2);
 }
-.nav-contact-us.dark{
-  background-color: #242424 !important;
-}
+
 /* nav-contact-us */
 
 .nav-contact-us {
@@ -384,7 +393,6 @@ header.sticky .main-menu > ul > li:hover > a, header.header_in .main-menu > ul >
   }
 
   .main-menu ul ul li:hover > a {
-    background-color: #f9f9f9;
     color: #e54750;
     padding-left: 18px;
   }
