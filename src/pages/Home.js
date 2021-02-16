@@ -14,7 +14,7 @@ const Home = ({color}) => {
     return (
         <>
             <HeroCarousel/>
-            <Title title="م اوافا قرعه" color={color}/>
+            <Title title="Categories" color={color}/>
             <CategoryCardList/>
             <Title title="Trending Sandwiches" color={color}/>
             <MyOwlCarousel/>
