@@ -43,7 +43,7 @@ const NavBar = (props) => {
                     <ul id="top_menu" className={`top_menu ${scrollState}`}>
                         <li><NavLink to="/register" id="sign-in" className="login">Sign In</NavLink></li>
                         <li >
-                            <NavCart/>
+                            <NavCart color = {props.color}/>
                         </li>
                     </ul>
                     <a href="#0" className="open_close" onClick={sideNavToggle}>
@@ -54,7 +54,7 @@ const NavBar = (props) => {
                             <a href="#0" className="open_close" onClick={sideNavToggle}>
                                 <i className="icon_close"></i><span>Menu</span>
                             </a>
-                            <a href="index.html"><img src="../img/logo.svg" width="162" height="35" alt=""></img></a>
+                            <a href="index.html"><img src={logo} width="auto" height="70" alt=""></img></a>
                         </div>
                         <ul>
                             <li><NavLink to="/about-us">ABOUT US!</NavLink></li>

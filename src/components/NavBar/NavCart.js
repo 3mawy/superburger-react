@@ -4,7 +4,7 @@ import {
 import {useState} from "react";
 import "./style.css"
 
-const NavCart = () => {
+const NavCart = (props) => {
 
     const [cartState, setToggleState] = useState("");
     function cartToggle() {
@@ -14,7 +14,7 @@ const NavCart = () => {
     return (
         <div className={`dropdown dropdown-cart `}>
             <a href="#" onClick={cartToggle} className="cart_bt"><strong>2</strong></a>
-            <div className={`dropdown-menu ${cartState}`}>
+            <div className={`dropdown-menu ${cartState} ${props.color}`}>
                 <ul>
                     <li>
                         <figure><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-1.jpg" alt=""
@@ -37,8 +37,8 @@ const NavCart = () => {
                 </ul>
                 <div className="total_drop">
                     <div className="clearfix add_bottom_15"><strong>Total</strong><span>$32.00</span></div>
-                    <NavLink to="/checkout" className="btn_1 outline">View Cart</NavLink>
-                    <NavLink to="/checkout" className="btn_1">Checkout</NavLink>
+                    <NavLink to="/checkout" className="btn_1 outline offers_btn">View Cart</NavLink>
+                    <NavLink to="/checkout" className="btn_1 offers_btn">Checkout</NavLink>
                 </div>
             </div>
         </div>

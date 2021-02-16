@@ -43,7 +43,7 @@ function App() {
 
           <main className={`bg_gray ${colorMode} header-fix-padding`} >
               <Route exact path="/" render={(props) => (
-                <Home {...props} color={colorMode} />
+                <Home  color={colorMode} />
                 )}/>
 
               <Route path="/about-us" render={(props) => (
@@ -63,7 +63,7 @@ function App() {
                 )}/>
 
         {/*Menu routes*/}
-              <Route path="/menu" render={(props) => (
+              <Route exact path="/menu" render={(props) => (
                 <ItemsList {...props} color={colorMode} />
                 )}/>
 
