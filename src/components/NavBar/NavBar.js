@@ -17,6 +17,11 @@ const NavBar = (props) => {
         setToggleState(menuState === "" ? "show" : "");
     }
 
+    const [subMenuState, setSubMenuState] = useState("");
+    function showSubMenu() {
+        setSubMenuState(subMenuState === "" ? "show_normal" : "");
+    }
+
     const [scrollState, setPos] = useState("")
 
     useEffect (()=>{
@@ -54,23 +59,23 @@ const NavBar = (props) => {
                             <a href="#0" className="open_close" onClick={sideNavToggle}>
                                 <i className="icon_close"></i><span>Menu</span>
                             </a>
-                            <a href="index.html"><img src={logo} width="auto" height="70" alt=""></img></a>
+                            <NavLink to="/"><img src={logo} width="auto" height="70" alt=""></img></NavLink>
                         </div>
                         <ul>
-                            <li><NavLink to="/about-us">ABOUT US!</NavLink></li>
-                            <li><NavLink to="/about-us">CONTACT US</NavLink></li>
+                            <li onClick={sideNavToggle}><NavLink to="/about-us">ABOUT US!</NavLink></li>
+                            <li onClick={sideNavToggle}><NavLink to="/about-us">CONTACT US</NavLink></li>
                             <li style={{width: "190px"}} ></li>
-                            <li className="submenu">
+                            <li  className="submenu" onClick={showSubMenu}>
                                 <NavLink to="/menu" className="show-submenu">MENU</NavLink>
-                                <ul>
-                                    <li><NavLink to="/menu/beef">Beef</NavLink></li>
-                                    <li><NavLink to="/menu/chicken">Chicken</NavLink></li>
-                                    <li><NavLink to="/menu/appetizers">appetizers</NavLink></li>
-                                    <li><NavLink to="/checkout">Checkout</NavLink></li>
-                                    <li><NavLink to="/confirm">confirm order</NavLink></li>
+                                <ul className={subMenuState}>
+                                    <li onClick={sideNavToggle}><NavLink to="/menu/beef">Beef</NavLink></li>
+                                    <li onClick={sideNavToggle}><NavLink to="/menu/chicken">Chicken</NavLink></li>
+                                    <li onClick={sideNavToggle}><NavLink to="/menu/appetizers">appetizers</NavLink></li>
+                                    <li onClick={sideNavToggle}><NavLink to="/checkout">Checkout</NavLink></li>
+                                    <li onClick={sideNavToggle}><NavLink to="/confirm">confirm order</NavLink></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li onClick={sideNavToggle}>
                                 <NavLink to="/offers" className="offers_btn btn_1  pulse_bt mb-1 ml-1 pt-2  pl-4">
                                     OFFERS
                                 </NavLink></li>

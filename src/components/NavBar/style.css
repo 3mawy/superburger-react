@@ -13,10 +13,20 @@ header.header_in.dark ul#top_menu li a {
 
 }
 .main-menu.dark ul ul {
-    background-color: #242424;
+    background-color: #2f2c2c;
 }
 .main-menu.dark ul ul > li > a{
   color: #efe7e7;
+}
+.main-menu.dark {
+  background-color: rgb(36, 36, 36);
+}
+.main-menu.dark ul li a {
+  color: #efe7e7 !important;
+}
+.main-menu.dark ul li {
+  border-top: none;
+  border-bottom: none;
 }
 .header_in.dark a.open_close {
   color: #efe7e7;

@@ -40,8 +40,9 @@ function App() {
         <a className={`night-mode-icon  ${colorMode}`}
                 style={{position: "absolute", zIndex: "99999999"}}
                 onClick={colorModeToggle}>
-        <FontAwesomeIcon icon={colorMode === "" ? faSun : faMoon } size="lg" spin style={{animation: "fa-spin 3.5s infinite linear"}}/>
-
+        <FontAwesomeIcon icon={colorMode === "" ? faSun : faMoon }
+                         size="lg" spin
+                         style={{animation: "fa-spin 3.5s infinite linear"}}/>
         </a>
         <NavBar title="aaa" color={colorMode}/>
 
