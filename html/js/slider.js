@@ -1,4 +1,4 @@
-// Carousel Home Page
+// Carousel Hometsx Page
 $("#carousel-home .owl-carousel").on("initialized.owl.carousel", function() {
   setTimeout(function() {
     $("#carousel-home .owl-carousel .owl-item.active .owl-slide-animated").addClass("is-transitioned");
