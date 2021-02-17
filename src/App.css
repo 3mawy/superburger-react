@@ -14,8 +14,9 @@
 }
 @media (max-width: 991px) {
   .night-mode-icon {
-  margin: 1.2rem;
+  margin: 1rem;
   margin-left: 3.5rem !important;
   font-size: 1.15rem;
+  right: 4.4rem
   }
 }

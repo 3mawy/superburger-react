@@ -194,7 +194,7 @@ header.header_in ul#top_menu li a {
 header a.open_close {
   position: absolute;
   left: 10px;
-  top: 5px;
+  top: 1.4px;
   z-index: 999;
   color: #fff;
   font-size: 32px;
