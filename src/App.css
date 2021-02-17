@@ -10,7 +10,7 @@
   color: #ede5e5;
 }
 .night-mode-icon:hover {
-  color: #c43a41;
+  color: #c43a41 !important;
 }
 @media (max-width: 991px) {
   .night-mode-icon {
