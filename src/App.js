@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
 
-import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Footer from "./components/Footer/Footer";
 import AboutUS from "./pages/AboutUs";
@@ -19,6 +18,9 @@ import ItemsSingle from "./pages/ItemsSingle";
 
 import './css/style.css'
 import './css/home.css'
+import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun , faMoon} from '@fortawesome/free-solid-svg-icons'
 
 import ConfirmedOrder from "./pages/ConfirmedOrder/ConfirmedOrder";
 import Home from "./pages/Home";
@@ -35,9 +37,11 @@ function App() {
 
     return (
     <Router>
-        <a className={`offers_btn btn_1 pulse_bt m-3 pt-2  pl-4 `}
+        <a className={`night-mode-icon  ${colorMode}`}
                 style={{position: "absolute", zIndex: "99999999"}}
-                onClick={colorModeToggle}>دوس عليا يا مادا
+                onClick={colorModeToggle}>
+        <FontAwesomeIcon icon={colorMode === "" ? faSun : faMoon } size="lg" spin style={{animation: "fa-spin 3.5s infinite linear"}}/>
+
         </a>
         <NavBar title="aaa" color={colorMode}/>
 
