@@ -1,0 +1,167 @@
+/*-------- 3.4 Footer --------*/
+@media (min-width: 768px) {
+  .collapse.dont-collapse-sm {
+    display: block !important;
+    height: auto !important;
+    visibility: visible !important;
+  }
+}
+footer {
+  background-color: #f6f1d3;
+  padding: 65px 0 0 0;
+  position: relative;
+}
+footer.dark {
+  background-color: #242424;
+  padding: 65px 0 0 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 20px 0 0 0;
+  }
+}
+footer hr {
+  border-color: rgba(0, 0, 0, 0.05);
+  margin-top: 5px;
+}
+@media (max-width: 767px) {
+  footer hr {
+    border-color: transparent;
+  }
+}
+footer .contacts ul {
+  margin: 0 0 25px 0;
+  padding: 0;
+  list-style: none;
+}
+@media (max-width: 767px) {
+  footer .contacts ul {
+    margin-top: 15px;
+  }
+}
+footer .contacts ul li {
+  padding-left: 35px;
+  position: relative;
+  margin-bottom: 10px;
+  color: #333;
+}
+footer.dark .contacts ul li {
+  color: #d8d6dc;
+}
+footer .contacts ul li a {
+  color: #333;
+  opacity: 1;
+}
+footer.dark .contacts ul li a {
+  color: #d8d6dc;
+}
+footer .contacts ul li a:hover {
+  opacity: 1;
+}
+footer .contacts ul li i {
+  font-size: 18px;
+  font-size: 1.125rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #e54750;
+  line-height: 1;
+}
+footer h3 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 15px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  footer h3 {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin: 0 -15px 0 -15px;
+    padding: 15px 15px 15px 15px;
+    display: block;
+  }
+  footer h3:after {
+    font-family: 'ElegantIcons';
+    content: "\4c";
+    width: 20px;
+    display: block;
+    float: right;
+  }
+  footer h3.opened:after {
+    content: "\4b";
+  }
+}
+footer .links ul {
+  margin: 0 0 25px 0;
+  padding: 0;
+  list-style: none;
+}
+@media (max-width: 767px) {
+  footer .links ul {
+    margin-top: 15px;
+  }
+}
+footer .links ul li {
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+footer .links ul li a {
+  position: relative;
+  color: #333;
+  opacity: 1;
+  display: inline-block;
+}
+footer.dark .links ul li a {
+  color: #ede5e5;
+}
+footer .links ul li a:hover {
+  -webkit-transform: translate(5px, 0);
+  -moz-transform: translate(5px, 0);
+  -ms-transform: translate(5px, 0);
+  -o-transform: translate(5px, 0);
+  transform: translate(5px, 0);
+  opacity: 1;
+}
+footer .links ul li a:hover:after {
+  opacity: 1;
+}
+footer .links ul li a:after {
+  font-family: 'ElegantIcons';
+  content: "\24";
+  position: relative;
+  margin-left: 5px;
+  top: 2px;
+  opacity: 0;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+footer ul.additional_links li a {
+  color: #444;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+footer.dark ul.additional_links li a {
+  color: #ececec;
+
+}
+ul.additional_links li span {
+  color: #444;
+}
+footer.dark ul.additional_links li span {
+  color: #ececec;
+}

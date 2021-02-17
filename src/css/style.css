@@ -1839,11 +1839,11 @@ a:hover, a:focus {
 }
 .hero_single.version_1 {
   height: 620px;
-  background: #faf3cc url(../components/img/hero_5.svg) center top no-repeat;
+  background: #faf3cc url(img/hero_5.svg) center top no-repeat;
 }
 @media (max-width: 991px) {
   .hero_single.version_1 {
-    background: #faf3cc url(../components/img/hero_5_mobile.svg) center top no-repeat;
+    background: #faf3cc url(img/hero_5_mobile.svg) center top no-repeat;
   }
 }
 @media (max-width: 991px) {
@@ -1860,7 +1860,7 @@ a:hover, a:focus {
 }
 .hero_single.version_2 {
   height: 620px;
-  background: #faf3cc url(../components/img/home_section_2.jpg) center center no-repeat;
+  background: #faf3cc url(img/home_section_2.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3383,7 +3383,7 @@ header.black_nav .dropdown.user a:hover {
   height: 65px;
   top: -65px;
   left: 0;
-  background: url("../components/img/wave_white.svg");
+  background: url("img/wave_white.svg");
   z-index: 99;
   animation: waves 20s linear infinite;
 }
@@ -3391,7 +3391,7 @@ header.black_nav .dropdown.user a:hover {
   content: '';
   width: 100%;
   height: 65px;
-  background: url("../components/img/wave_white.svg");
+  background: url("img/wave_white.svg");
   position: absolute;
   top: 0;
   left: 0;
@@ -3416,10 +3416,10 @@ header.black_nav .dropdown.user a:hover {
   top: 0;
 }
 .wave.gray {
-  background: url("../components/img/wave_gray.svg");
+  background: url("img/wave_gray.svg");
 }
 .wave.gray:before, .wave.gray:after {
-  background: url("../components/img/wave_gray.svg");
+  background: url("img/wave_gray.svg");
   position: absolute;
 }
 
@@ -3502,7 +3502,7 @@ header.black_nav .dropdown.user a:hover {
   background-color: #f9fafb;
 }
 .bg_gray.pattern {
-  background: #f4f4f4 url(../components/img/pattern_2.svg) repeat;
+  background: #f4f4f4 url(img/pattern_2.svg) repeat;
 
 }
 .bg_gray.waves_divider {
@@ -3512,7 +3512,7 @@ header.black_nav .dropdown.user a:hover {
 }
 .bg_gray.waves_divider:before {
   content: '';
-  background: url(../components/img/wave_gray.svg) repeat;
+  background: url(img/wave_gray.svg) repeat;
   width: 100%;
   height: 65px;
   -webkit-background-size: cover;
@@ -3526,7 +3526,7 @@ header.black_nav .dropdown.user a:hover {
 .bg_gray.waves_divider:after {
   transform: scale(-1, -1);
   content: '';
-  background: url(../components/img/wave_gray.svg) repeat;
+  background: url(img/wave_gray.svg) repeat;
   width: 100%;
   height: 65px;
   -webkit-background-size: cover;
@@ -3797,141 +3797,7 @@ a.btn_1.gradient:active:before, a.btn_1.gradient.nice-select.open:before,
     box-shadow: 0 0 0 0 rgba(229, 71, 80, 0);
   }
 }
-/*-------- 3.4 Footer --------*/
-@media (min-width: 768px) {
-  .collapse.dont-collapse-sm {
-    display: block !important;
-    height: auto !important;
-    visibility: visible !important;
-  }
-}
-footer {
-  background-color: #f6f1d3;
-  padding: 65px 0 0 0;
-  position: relative;
-}
-@media (max-width: 767px) {
-  footer {
-    padding: 20px 0 0 0;
-  }
-}
-footer hr {
-  border-color: rgba(0, 0, 0, 0.05);
-  margin-top: 5px;
-}
-@media (max-width: 767px) {
-  footer hr {
-    border-color: transparent;
-  }
-}
-footer .contacts ul {
-  margin: 0 0 25px 0;
-  padding: 0;
-  list-style: none;
-}
-@media (max-width: 767px) {
-  footer .contacts ul {
-    margin-top: 15px;
-  }
-}
-footer .contacts ul li {
-  padding-left: 35px;
-  position: relative;
-  margin-bottom: 10px;
-  color: #333;
-}
-footer .contacts ul li a {
-  color: #333;
-  opacity: 1;
-}
-footer .contacts ul li a:hover {
-  opacity: 1;
-}
-footer .contacts ul li i {
-  font-size: 18px;
-  font-size: 1.125rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #e54750;
-  line-height: 1;
-}
-footer h3 {
-  font-size: 14px;
-  font-size: 0.875rem;
-  margin-bottom: 15px;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-}
-@media (max-width: 767px) {
-  footer h3 {
-    font-size: 13px;
-    font-size: 0.8125rem;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    margin: 0 -15px 0 -15px;
-    padding: 15px 15px 15px 15px;
-    display: block;
-  }
-  footer h3:after {
-    font-family: 'ElegantIcons';
-    content: "\4c";
-    width: 20px;
-    display: block;
-    float: right;
-  }
-  footer h3.opened:after {
-    content: "\4b";
-  }
-}
-footer .links ul {
-  margin: 0 0 25px 0;
-  padding: 0;
-  list-style: none;
-}
-@media (max-width: 767px) {
-  footer .links ul {
-    margin-top: 15px;
-  }
-}
-footer .links ul li {
-  margin-bottom: 8px;
-  line-height: 1.2;
-}
-footer .links ul li a {
-  position: relative;
-  color: #333;
-  opacity: 1;
-  display: inline-block;
-}
-footer .links ul li a:hover {
-  -webkit-transform: translate(5px, 0);
-  -moz-transform: translate(5px, 0);
-  -ms-transform: translate(5px, 0);
-  -o-transform: translate(5px, 0);
-  transform: translate(5px, 0);
-  opacity: 1;
-}
-footer .links ul li a:hover:after {
-  opacity: 1;
-}
-footer .links ul li a:after {
-  font-family: 'ElegantIcons';
-  content: "\24";
-  position: relative;
-  margin-left: 5px;
-  top: 2px;
-  opacity: 0;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
+
 
 /* Newsletter footer*/
 @-webkit-keyframes rotation {
@@ -4089,14 +3955,7 @@ ul.additional_links li:last-child:after {
 ul.additional_links li span {
   color: #444;
 }
-ul.additional_links li a {
-  color: #444;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
+
 ul.additional_links li a:hover {
   color: #222;
 }
@@ -4157,6 +4016,7 @@ ul.additional_links li:after {
   cursor: pointer;
   outline: none;
 }
+
 .styled-select select:focus {
   color: #444;
   outline: none;
@@ -5141,11 +5001,11 @@ a.social_bt:hover {
 }
 
 a.social_bt.facebook {
-  background: #3B5998 url(../components/img/Facebook__logo.svg) 10px center no-repeat;
+  background: #3B5998 url(img/Facebook__logo.svg) 10px center no-repeat;
 }
 
 a.social_bt.google {
-  background: #444 url(../components/img/Google__G__Logo.svg) 10px center no-repeat;
+  background: #444 url(img/Google__G__Logo.svg) 10px center no-repeat;
 }
 
 .divider {

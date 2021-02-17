@@ -3,6 +3,8 @@
   margin: 1.3rem;
   margin-left: 2rem !important;
   font-size: 1.4rem;
+  position: absolute;
+  z-index: 99999999
 }
 .night-mode-icon.dark {
   color: #ede5e5;

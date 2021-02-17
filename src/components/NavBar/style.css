@@ -12,17 +12,28 @@ header.header_in.dark ul#top_menu li a {
     color: #efe7e7;
 
 }
+
+@media (max-width: 991px) {
+  .main-menu.dark {
+    background-color: rgb(36, 36, 36);
+  }
+  .main-menu.dark ul li a:hover{
+    color: #e54750 !important;
+    background-color: #2f2c2c;
+  }
+}
 .main-menu.dark ul ul {
     background-color: #2f2c2c;
 }
 .main-menu.dark ul ul > li > a{
   color: #efe7e7;
 }
-.main-menu.dark {
-  background-color: rgb(36, 36, 36);
-}
+
 .main-menu.dark ul li a {
   color: #efe7e7 !important;
+}
+.main-menu.dark ul li a:hover{
+  color: #e54750 !important;
 }
 .main-menu.dark ul li {
   border-top: none;
@@ -34,7 +45,6 @@ header.header_in.dark ul#top_menu li a {
 .nav-contact-us.dark{
   background-color: #242424 !important;
 }
-
 .dropdown-cart .dropdown-menu.dark ul li strong {
   color: #efe7e7;
 }

@@ -1,8 +1,9 @@
-const Footer = () => {
+import "./style.css"
+const Footer = ({color}) => {
     return (
         <>
-            <footer>
-                <div className="wave gray footer"></div>
+            <footer className={color}>
+                {/*<div className={`wave gray footer `}></div>*/}
                 <div className="container margin_60_40 fix_mobile">
 
                     <div className="row">

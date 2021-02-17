@@ -1,4 +1,4 @@
-import HighlightsItems from "../components/Highlightsitems.js/HighlightsItems";
+import HighlightsItems from "../components/Highlightsitems/HighlightsItems";
 import HighlightsBrand from "../components/HighlightsBrand/HighlightsBrand";
 import CardList from "../components/Cards/CardList";
 import {Container} from "react-bootstrap";

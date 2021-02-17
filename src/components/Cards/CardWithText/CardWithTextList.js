@@ -22,7 +22,7 @@ const CardWithTextList = (props) => {
         <Container fluid className="p-0">
             <br/>
             <Row  className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2} >
-            {res.map((item, index) => <CardWithText key={item.id} name={"Cheesy Cheesy"} price={"45"}>{item}</CardWithText>)}
+            {res.map((item, index) => <CardWithText key={item.id} name={"Cheesy Cheesy"} price={"45"} color={props.color}>{item}</CardWithText>)}
             </Row>
         </Container>
 )

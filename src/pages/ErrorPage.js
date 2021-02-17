@@ -1,4 +1,4 @@
-import error from "../components/img/404.svg"
+import error from "../css/img/404.svg"
 import {Container} from "react-bootstrap";
 
 const ErrorPage = () => {

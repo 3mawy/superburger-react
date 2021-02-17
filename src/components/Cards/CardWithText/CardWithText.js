@@ -2,10 +2,11 @@ import sample from './sample.jpeg'
 import "./style.css"
 import {Col, Row, Button} from "react-bootstrap";
 
-const CardWithText = (props) => {
+const CardWithText = ({color, name, price}) => {
     return (
-        <Col className="p-0 pr-2 pl-2" >
-            <div className=" card-with-side-text " style={{border: "0", marginBottom:"1rem"}}>
+            <Col className="p-0 pr-2 pl-2" >
+            <div className={` card-with-side-text ${color}`} style={{border: "0", marginBottom:"1rem"}}>
+                <a href="#">
                 <Row className=" no-gutters">
                     <Col className="col-auto img-wrapper" >
                         <img src={sample} className="img-fluid hover-zoom" alt=""/>
@@ -14,7 +15,7 @@ const CardWithText = (props) => {
                         <div className="card-block px-2">
                         <Row>
                             <Col>
-                                    <h5 className="card-title mb-1" style={{marginTop: ".3rem"}}>{props.name}</h5>
+                                    <h5 className={`${color}`} style={{marginTop: ".3rem"}}>{name}</h5>
                             </Col>
                             {/*<Col xs={3} className="pl-1">*/}
                             {/*    <div className="score"><strong>8.9</strong></div>*/}
@@ -27,7 +28,7 @@ const CardWithText = (props) => {
                         </Row>
                         <Row xs={2} className="align-items-end">
                             <Col xs={6}   className="text-left pr-0">
-                                    <h5 className="card-title mb-2 " style={{marginTop: ".3rem"}}>{props.price}
+                                    <h5 className="card-title mb-2 " style={{marginTop: ".3rem"}}>{price}
                                         <span style={{color: ''}}>
                                             EGP
                                         </span>
@@ -40,6 +41,7 @@ const CardWithText = (props) => {
                         </div>
                     </Col>
                 </Row>
+                </a>
             </div>
         </Col>
 )

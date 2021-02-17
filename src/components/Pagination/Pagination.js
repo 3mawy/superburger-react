@@ -2,7 +2,7 @@
 
 const Pagination = () => {
     return (
-        <div className="pagination_fg">
+        <div className="pagination_fg pb-4 pt-2">
             <a href="#">&laquo;</a>
             <a href="#" className="active">1</a>
             <a href="#">2</a>

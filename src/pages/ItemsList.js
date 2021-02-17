@@ -16,8 +16,8 @@ const ItemsList = (props) => {
                 </Col>
                 <Col lg={9}>
                     <Banner title = "Chicken" desc="Have A Taste Of The Best Fried Chicken Sandwiches!"/>
-                    <CardList row_size={4}></CardList>
-                    <CardWithTextList></CardWithTextList>
+                    {/*<CardList row_size={4}></CardList>*/}
+                    <CardWithTextList color={props.color}></CardWithTextList>
                 </Col>
             </Row>
             <Pagination/>
