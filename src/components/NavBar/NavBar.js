@@ -51,15 +51,15 @@ const NavBar = (props) => {
                             <NavCart color = {props.color}/>
                         </li>
                     </ul>
-                    <a href="#0" className="open_close" onClick={sideNavToggle}>
+                    <a  className="open_close" onClick={sideNavToggle}>
                         <i className="icon_menu"></i><span>Menu</span>
                     </a>
                     <nav  className={`main-menu ${menuState} ${scrollState} ${props.color}`} >
                         <div id="header_menu">
-                            <a href="#0" className="open_close" onClick={sideNavToggle}>
+                            <a  className="open_close" onClick={sideNavToggle}>
                                 <i className="icon_close"></i><span>Menu</span>
                             </a>
-                            <NavLink to="/"><img src={logo} width="auto" height="70" alt=""></img></NavLink>
+                            <NavLink to="/"><img onClick={sideNavToggle} src={logo} width="auto" height="70" alt=""></img></NavLink>
                         </div>
                         <ul>
                             <li onClick={sideNavToggle}><NavLink to="/about-us">ABOUT US!</NavLink></li>
