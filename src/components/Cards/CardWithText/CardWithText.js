@@ -1,12 +1,13 @@
 import sample from './sample.jpeg'
 import "./style.css"
 import {Col, Row, Button} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 
 const CardWithText = ({color, name, price}) => {
     return (
             <Col className="p-0 pr-2 pl-2" >
             <div className={` card-with-side-text ${color}`} style={{border: "0", marginBottom:"1rem"}}>
-                <a href="#">
+                <NavLink to="/items-single">
                 <Row className=" no-gutters">
                     <Col className="col-auto img-wrapper" >
                         <img src={sample} className="img-fluid hover-zoom" alt=""/>
@@ -35,13 +36,13 @@ const CardWithText = ({color, name, price}) => {
                                     </h5>
                             </Col>
                             <Col xs={5} className="text-right pr-0 pl-1">
-                                <a href="#" className="btn-primary btn_1 small gradient pulse_bt mb-1 ml-1">Order</a>
+                                <NavLink to="/" className="btn-primary btn_1 small gradient pulse_bt mb-1 ml-1">Order</NavLink>
                             </Col>
                         </Row>
                         </div>
                     </Col>
                 </Row>
-                </a>
+                </NavLink>
             </div>
         </Col>
 )

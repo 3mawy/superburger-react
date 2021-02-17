@@ -1,3 +1,6 @@
+a:hover{
+    color: #3d3b3b !important;
+}
 .card-with-side-text a {
     color: #1e1d1d;
 }
@@ -19,7 +22,6 @@ img.hover-zoom {
 img.hover-zoom:hover {
     transform: scale(1.1);
 }
-
 .card-with-side-text {
     box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.05);
     transition: all 0.3s ease-in-out;

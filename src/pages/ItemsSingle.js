@@ -1,9 +1,9 @@
 import SingleItemDetails from "../components/SingleItemDetails/SingleItemDetails";
 
-const ItemsSingle = () => {
+const ItemsSingle = ({color}) => {
     return (
         <div className={`container pt-5`}>
-            <SingleItemDetails/>
+            <SingleItemDetails color={color}/>
         </div>
     )
 }
