@@ -1,18 +1,20 @@
 import "../../css/listing.css"
+import {useSelector} from "react-redux";
 
-const Sidebar = ({color}) => {
+const Sidebar = () => {
+    const colorMode = useSelector(state => state.nightMode.mode)
     return (
         <aside id="sidebar_fixed">
             <br/>
             <br/>
-            <a href="#0" className={`open_filters btn_filters ${color}`}><i
+            <a href="#0" className={`open_filters btn_filters ${colorMode}`}><i
                 className="icon_adjust-vert"></i><span>Filters</span></a>
 
-            <div className={`filter_col ${color}`}>
+            <div className={`filter_col ${colorMode}`}>
                 <div className="inner_bt clearfix">Filters<a href="#" className="open_filters"><i
                     className="icon_close"></i></a></div>
                 <div className="filter_type " >
-                    <h4><a href="#filter_1" data-toggle="collapse" className={`opened ${color}`}>Sort</a></h4>
+                    <h4><a href="#filter_1" data-toggle="collapse" className={`opened ${colorMode}`}>Sort</a></h4>
                     <div className="collapse show" id="filter_1">
                         <ul>
                             <li>
@@ -55,7 +57,7 @@ const Sidebar = ({color}) => {
                     </div>
                 </div>
                 <div className="filter_type">
-                    <h4><a href="#filter_2" data-toggle="collapse" className={`closed ${color}`}>Categories</a></h4>
+                    <h4><a href="#filter_2" data-toggle="collapse" className={`closed ${colorMode}`}>Categories</a></h4>
                     <div className="collapse" id="filter_2">
                         <ul>
                             <li>
@@ -104,7 +106,7 @@ const Sidebar = ({color}) => {
                     </div>
                 </div>
                 <div className="filter_type last">
-                    <h4 ><a href="#filter_4" data-toggle="collapse" className={`closed ${color}`}>Rating</a></h4>
+                    <h4 ><a href="#filter_4" data-toggle="collapse" className={`closed ${colorMode}`}>Rating</a></h4>
                     <div className="collapse" id="filter_4">
                         <ul>
                             <li>

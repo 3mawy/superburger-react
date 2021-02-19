@@ -1,14 +1,18 @@
 import {
-    BrowserRouter as Router,
     NavLink,
 } from "react-router-dom";
 import { useState, useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {nightModeSlice} from "../../redux/slices/nightModeSlice";
 
 import "./style.css"
 import logo from './logo_final-trimmy.png'
 import NavCart from "./NavCart";
 import {Col, Container} from "react-bootstrap";
 import NavContactUs from "./NavContactUs";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
+
 
 const NavBar = (props) => {
 
@@ -35,10 +39,20 @@ const NavBar = (props) => {
         })
     },[])
 
+    const dispatch = useDispatch()
+    const actions = nightModeSlice.actions
+    const colorModeToggle = () => dispatch(actions.toggle())
+    const colorMode = useSelector(state => state.nightMode.mode)
     return (
         <nav className="fixed-top">
             <header className={` header_in clearfix ${scrollState} ${props.color}`}>
                 <Container className="">
+                     <a className={`night-mode-icon  ${colorMode}`}
+                            onClick={colorModeToggle}>
+                    <FontAwesomeIcon icon={colorMode === "" ? faSun : faMoon }
+                                     size="lg" spin
+                                     style={{animation: "fa-spin 3.5s infinite linear"}}/>
+                    </a>
                     <div id="logo">
                         <NavLink to="/" className='m-auto'>
                             <img src={logo} className={`logo-super ${scrollState}`} alt=""></img>
