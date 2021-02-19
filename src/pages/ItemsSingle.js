@@ -1,9 +1,11 @@
 import SingleItemDetails from "../components/SingleItemDetails/SingleItemDetails";
+import {useSelector} from "react-redux";
 
-const ItemsSingle = ({color}) => {
+const ItemsSingle = () => {
+    const colorMode = useSelector(state => state.nightMode.mode)
     return (
         <div className={`container pt-5`}>
-            <SingleItemDetails color={color}/>
+            <SingleItemDetails color={colorMode}/>
         </div>
     )
 }

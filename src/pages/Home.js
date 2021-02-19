@@ -9,14 +9,16 @@ import CategoryCardList from "../components/Cards/CategoryCard/CategoryCardList"
 import MyOwlCarousel from "../components/OwlCarousel/MyOwlCarousel";
 import HighlightsBrand from "../components/HighlightsBrand/HighlightsBrand";
 import PropTypes from "prop-types";
+import {useSelector} from "react-redux";
 
-const Home = ({color}) => {
+const Home = () => {
+    const colorMode = useSelector(state => state.nightMode.mode)
     return (
         <>
             <HeroCarousel/>
-            <Title title="Categories" color={color}/>
+            <Title title="Categories" color={colorMode}/>
             <CategoryCardList/>
-            <Title title="Trending Sandwiches" color={color}/>
+            <Title title="Trending Sandwiches" color={colorMode}/>
             <MyOwlCarousel/>
             <HighlightsBrand/>
         </>

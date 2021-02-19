@@ -105,6 +105,11 @@ a.btn_filters {
   -ms-border-radius: 3px;
   border-radius: 3px;
   height: 42px;
+  position: absolute;
+  z-index: 1;
+  right: 1.3rem;
+  top: 1.3rem;
+
 }
 a.btn_filters span {
   display: none;

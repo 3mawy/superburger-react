@@ -1,8 +1,6 @@
 .night-mode-icon {
   color: #ff8416;
-  margin: 1.3rem;
-  margin-left: 2rem !important;
-  font-size: 1.4rem;
+  font-size: 1.22rem;
   position: absolute;
   z-index: 99999999
 }
@@ -17,8 +15,7 @@
 }
 @media (max-width: 991px) {
   .night-mode-icon {
-  margin: 1rem;
-  margin-left: 3.5rem !important;
+  margin-right: 1rem !important;
   font-size: 1.15rem;
   right: 4.4rem
   }
