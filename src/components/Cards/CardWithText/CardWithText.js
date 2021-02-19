@@ -7,7 +7,7 @@ const CardWithText = ({color, name, price}) => {
     return (
             <Col className="p-0 pr-2 pl-2" >
             <div className={` card-with-side-text ${color}`} style={{border: "0", marginBottom:"1rem"}}>
-                <NavLink to="/items-single">
+                <NavLink to="/items-single" className={`${color}`}>
                 <Row className=" no-gutters">
                     <Col className="col-auto img-wrapper" >
                         <img src={sample} className="img-fluid hover-zoom" alt=""/>
@@ -24,12 +24,12 @@ const CardWithText = ({color, name, price}) => {
                         </Row>
                         <Row>
                             <Col>
-                                <p className="card-text mb-1">safaf  safaf safaf adfdasga adfdasga agadgdasg  fadfadf adf agdag adf</p>
+                                <p className={`card-text mb-1 `}>safaf  safaf safaf adfdasga adfdasga agadgdasg  fadfadf adf agdag adf</p>
                             </Col>
                         </Row>
                         <Row xs={2} className="align-items-end">
                             <Col xs={6}   className="text-left pr-0">
-                                    <h5 className="card-title mb-2 " style={{marginTop: ".3rem"}}>{price}
+                                    <h5 className={`card-title mb-2 ${color}`} style={{marginTop: ".3rem"}}>{price}
                                         <span style={{color: ''}}>
                                             EGP
                                         </span>

@@ -10,6 +10,9 @@
   color: #fff;
   position: relative;
 }
+.promo.dark {
+  color: #1d1d1f;
+}
 .promo h3 {
   color: #fff;
   margin-bottom: 0;

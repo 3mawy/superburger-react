@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae5756c1-7620-482a-a815-3fcbe6225953" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardWithText/CardWithText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardWithText/CardWithText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardWithText/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardWithText/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Banner/Banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Banner/Banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Banner/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Banner/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/listing.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/listing.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ItemsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ItemsList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +91,8 @@
       <workItem from="1612958986233" duration="49177000" />
       <workItem from="1613143050974" duration="38486000" />
       <workItem from="1613272216605" duration="9382000" />
-      <workItem from="1613508333505" duration="21066000" />
+      <workItem from="1613508333505" duration="23572000" />
+      <workItem from="1613732186090" duration="670000" />
     </task>
     <servers />
   </component>

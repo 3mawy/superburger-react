@@ -1,5 +1,8 @@
 a:hover{
-    color: #3d3b3b !important;
+    color: #1e1d1d!important;
+}
+a.dark:hover{
+    color: #d5c9c9 !important;
 }
 .card-with-side-text a {
     color: #1e1d1d;
@@ -33,8 +36,12 @@ img.hover-zoom:hover {
 .card-with-side-text.dark {
     background: rgb(36, 36, 36);
 }
+.card-with-side-text.dark:hover {
+    background: rgb(43, 43, 43);
+}
 .card-with-side-text:hover {
     box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.1);
+    background: rgb(234, 233, 233);
     /*transform: scale(1.01);*/
 }
 .card-text{

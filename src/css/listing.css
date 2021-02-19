@@ -114,6 +114,9 @@ a.btn_filters i {
   font-size: 1.3125rem;
   color: #444;
 }
+a.btn_filters.dark i {
+  color: #ede5e5;
+}
 @media (max-width: 991px) {
   a.btn_filters {
     float: right;

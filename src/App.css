@@ -12,6 +12,9 @@
 .night-mode-icon:hover {
   color: #c43a41 !important;
 }
+.night-mode-icon.dark:hover {
+  color: #c43a41 !important;
+}
 @media (max-width: 991px) {
   .night-mode-icon {
   margin: 1rem;

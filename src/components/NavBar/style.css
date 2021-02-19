@@ -12,7 +12,10 @@ header.header_in.dark ul#top_menu li a {
     color: #efe7e7;
 
 }
+header.header_in.dark ul#top_menu li a:hover {
+    color: #fbfdf8 !important;
 
+}
 @media (max-width: 991px) {
   .main-menu.dark {
     background-color: rgb(36, 36, 36);
