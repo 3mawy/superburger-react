@@ -114,6 +114,7 @@ function App() {
 
 export default App
 
+
               {/*<Route path="/about-us" component={AboutUS}/>*/}
               {/*<Route path="/checkout" component={CheckOut}/>*/}
               {/*<Route path="/contact-us" component={ContactUs}/>*/}
