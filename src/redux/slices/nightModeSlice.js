@@ -1,20 +1,19 @@
-import { createSlice } from '@reduxjs/toolkit'
+import {createSlice} from '@reduxjs/toolkit'
 
-const initialState = { mode: "" }
+const initialState = {mode: ""}
 
 export const nightModeSlice = createSlice({
-  name: 'nightMode',
-  initialState,
-  reducers: {
-    toggle(state) {
-        if (state.mode === ""){
-            state.mode = "dark"
+    name: 'nightMode',
+    initialState,
+    reducers: {
+        toggle(state) {
+            if (state.mode === "") {
+                state.mode = "dark"
+            } else {
+                state.mode = ""
+            }
         }
-        else {
-            state.mode = ""
-        }
-    }
-  },
+    },
 })
 
 // export const { actions, reducer } = nightModeReducer

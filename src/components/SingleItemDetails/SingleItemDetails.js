@@ -7,10 +7,10 @@ const SingleItemDetails = () => {
     const colorMode = useSelector(state => state.nightMode.mode)
     return (
         <Row className="row pt-3">
-            <Col lg={5} >
+            <Col lg={5}>
                 <ImgBox img={sample}></ImgBox>
             </Col>
-            <Col lg={7} >
+            <Col lg={7}>
                 <div className="detail_page_head clearfix">
                     <div className="rating">
                         <div className="score"><span>Superb<em>15 Reviews</em></span><strong>8.9</strong></div>
@@ -30,12 +30,12 @@ const SingleItemDetails = () => {
                 <h6 className={colorMode}>About "da Alfredo"</h6>
                 <p>Mei at intellegat reprehendunt, te facilisis definiebas dissentiunt usu. Choro delicata voluptatum cu
                     vix.<br/>Sea error splendide at. Te sed facilisi persequeris definitiones, ad per scriptorem
-                        instructior, vim latine adipiscing no. Cu tacimates salutandi his, mel te dicant quodsi aperiri.
-                        Unum timeam his eu.</p>
+                    instructior, vim latine adipiscing no. Cu tacimates salutandi his, mel te dicant quodsi aperiri.
+                    Unum timeam his eu.</p>
             </Col>
         </Row>
 
-)
+    )
 }
 
 export default SingleItemDetails
