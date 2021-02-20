@@ -1,17 +1,31 @@
 import "../../css/listing.css"
 import {useSelector} from "react-redux";
+import {useState} from "react";
 
 const Sidebar = () => {
     const colorMode = useSelector(state => state.nightMode.mode)
+    const [sideMenuCategories, setSideMenuCategories] = useState("");
+    function setSideCategories() {
+        setSideMenuCategories(sideMenuCategories === "" ? "show" : "");
+    }
+
+    const [sideMenuRating, setSideMenuRating] = useState("");
+    function setSideRating() {
+        setSideMenuRating(sideMenuRating === "" ? "show" : "");
+    }
+
+    const [filtersToggleState, setFiltersState] = useState("");
+    function toggleFilters() {
+        setFiltersState(filtersToggleState === "" ? "show" : "");
+    }
     return (
         <aside id="sidebar_fixed">
-            <br/>
-            <br/>
-            <a href="#0" className={`open_filters btn_filters ${colorMode}`}><i
+
+            <a onClick={toggleFilters} className={`open_filters btn_filters ${colorMode}`}><i
                 className="icon_adjust-vert"></i><span>Filters</span></a>
 
-            <div className={`filter_col ${colorMode}`}>
-                <div className="inner_bt clearfix">Filters<a href="#" className="open_filters"><i
+            <div className={`filter_col ${colorMode} ${filtersToggleState}`}>
+                <div className="inner_bt clearfix">Filters<a onClick={toggleFilters} className="open_filters"><i
                     className="icon_close"></i></a></div>
                 <div className="filter_type ">
                     <h4><a href="#filter_1" data-toggle="collapse" className={`opened ${colorMode}`}>Sort</a></h4>
@@ -57,8 +71,8 @@ const Sidebar = () => {
                     </div>
                 </div>
                 <div className="filter_type">
-                    <h4><a href="#filter_2" data-toggle="collapse" className={`closed ${colorMode}`}>Categories</a></h4>
-                    <div className="collapse" id="filter_2">
+                    <h4><a href="#filter_2" onClick={setSideCategories} data-toggle="collapse" className={`closed ${colorMode}`}>Categories</a></h4>
+                    <div className={`collapse ${sideMenuCategories}`} id="filter_2">
                         <ul>
                             <li>
                                 <label className="container_check">Pizza - Italian <small>12</small>
@@ -106,8 +120,8 @@ const Sidebar = () => {
                     </div>
                 </div>
                 <div className="filter_type last">
-                    <h4><a href="#filter_4" data-toggle="collapse" className={`closed ${colorMode}`}>Rating</a></h4>
-                    <div className="collapse" id="filter_4">
+                    <h4><a href="#filter_4" onClick={setSideRating} data-toggle="collapse" className={`closed ${colorMode}`}>Rating</a></h4>
+                    <div className={`collapse ${sideMenuRating}`} id="filter_4">
                         <ul>
                             <li>
                                 <label className="container_check">Superb 9+ <small>06</small>

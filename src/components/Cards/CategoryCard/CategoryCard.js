@@ -1,6 +1,7 @@
 import "./style.css"
 import sample from '../sample.jpeg'
 import {Col} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 
 const CategoryCard = (props) => {
     console.log(props)
@@ -9,7 +10,7 @@ const CategoryCard = (props) => {
 
         <Col className="pb-2" >
             <div className="item_version_2" >
-                <a href="grid-listing-filterscol.html">
+                <NavLink to = "/menu">
                     <figure >
                         <span>98</span>
                         <img src={sample} data-src="img/home_cat_pizza.jpg" alt=""
@@ -19,7 +20,7 @@ const CategoryCard = (props) => {
                                 {/*<small>Avg price $40</small>*/}
                             </div>
                     </figure>
-                </a>
+                </NavLink>
             </div>
         </Col>
 )

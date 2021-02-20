@@ -130,7 +130,7 @@ a.btn_filters i {
 }
 
 a.btn_filters.dark i {
-    color: #ede5e5;
+    color: #242424;
 }
 
 @media (max-width: 991px) {
