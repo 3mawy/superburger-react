@@ -3,7 +3,7 @@
 }
 .item_version_2 a span {
   position: absolute;
-  right: 15px;
+  left: 15px;
   top: 15px;
   display: inline-block;
   line-height: 34px;
@@ -21,6 +21,7 @@
   text-align: center;
   font-weight: 500;
   z-index: 9;
+
 }
 .item_version_2 a figure {
   position: relative;
@@ -61,18 +62,21 @@
   overflow: hidden;
 }
 .item_version_2 a .info {
+  font-family: 'Concert One', cursive;
   position: absolute;
   width: 100%;
   z-index: 9;
   padding: 25px 20px 15px 20px;
   color: #fff;
   left: 0;
-  bottom: 0;
-  background: transparent;
-  background: -webkit-linear-gradient(top, transparent, #000);
-  background: linear-gradient(to bottom, transparent, #000);
+  top: 0;
   box-sizing: border-box;
   line-height: 1;
+  background: #ff7a2a;
+  height: 70px;
+  /*border-radius: 0px 54px 0px 0px;*/
+  border-radius: 0px 0px 4px 54px;
+  box-shadow: #cb5017 -1px 4px;
 }
 @media (max-width: 991px) {
   .item_version_2 a .info {
@@ -80,23 +84,35 @@
   }
 }
 .item_version_2 a .info h3 {
-  color: #fff;
-  font-size: 18px;
-  font-size: 1.125rem;
+  color: #f5f6f7;
+  text-shadow: #0b2e13 3px 3px;
+  font-size: 3rem;
   margin: 0;
+  position: relative;
+  bottom: 1.88rem;
+  left: .45rem;
+
 }
-@media (max-width: 767px) {
+@media (max-width: 1100px) {
+  .item_version_2 a .info h3 {
+    font-size: 2.5rem;
+    padding-top: .45rem;
+  }
+  .item_version_2 a .info {
+    height: 4rem;
+  }
+}
+@media (max-width: 898px) {
   .item_version_2 a .info h3 {
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 1.2em;
+    padding-top: .45rem;
+  }
+  .item_version_2 a .info {
+    height: 1rem;
   }
 }
-@media (max-width: 767px) {
-  .item_version_2 a .info small {
-    font-size: 12px;
-    font-size: 0.75rem;
-  }
-}
+
 .item_version_2 a figure span {
   font-weight: 600;
 }

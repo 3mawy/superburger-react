@@ -16,7 +16,8 @@ const Home = () => {
     return (
         <>
             <HeroCarousel/>
-            <Title title="Categories" color={colorMode}/>
+            {/*<Title title="Categories" color={colorMode}/>*/}
+            <br/>
             <CategoryCardList/>
             <Title title="Trending Sandwiches" color={colorMode}/>
             <MyOwlCarousel/>
