@@ -91,7 +91,7 @@ const NavBar = (props) => {
                                 </ul>
                             </li>
                             <li onClick={sideNavToggle}>
-                                <NavLink to="/offers" className="offers_btn btn_1  pulse_bt mb-1 ml-1 pt-2  pl-4">
+                                <NavLink to="/offers" className={`offers_btn btn_1 ${scrollState} pulse_bt mb-1 ml-1 pt-2  pl-4`}>
                                     OFFERS
                                 </NavLink></li>
                         </ul>

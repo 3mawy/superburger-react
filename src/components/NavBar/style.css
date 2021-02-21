@@ -1,6 +1,10 @@
 a:hover{
   text-decoration: none !important;
 }
+.dropdown-menu>ul>li>strong,  .total_drop .clearfix {
+  font-family: "Poppins", Helvetica, sans-serif!important;
+
+}
 /*dark mode*/
 header.header_in.dark {
   background-color: #1e1d1d;
@@ -66,6 +70,10 @@ header.header_in.dark ul#top_menu li a:hover {
   color: #ffffff !important;
   text-shadow: 2px 2px #a74e03;
 
+}
+.offers_btn.scrolled {
+  height: 30px!important;
+  padding-top: 5px !important;
 }
 /* NavBar Logo */
 
