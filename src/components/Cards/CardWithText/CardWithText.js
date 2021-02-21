@@ -1,9 +1,17 @@
 import sample from './sample.jpeg'
 import "./style.css"
-import {Col, Row, Button} from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import {NavLink} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import cartSlice from "../../../redux/slices/cartSlice";
 
 const CardWithText = ({color, name, price}) => {
+    let product = {id: "5", name: "ana"}
+
+    const dispatch = useDispatch()
+    const actions = cartSlice.actions
+    const removeFromCart = () => dispatch(actions.removeFromCart({id: product.id }))
+    const addToCart = () => dispatch(actions.addToCart({product: product }))
     return (
             <Col className="p-0 pr-2 pl-2" >
             <div className={` card-with-side-text ${color}`} style={{border: "0", marginBottom:"1rem"}}>
@@ -36,7 +44,7 @@ const CardWithText = ({color, name, price}) => {
                                     </h5>
                             </Col>
                             <Col xs={5} className="text-right pr-0 pl-1">
-                                <NavLink to="/" className="btn-primary btn_1 small gradient pulse_bt mb-1 ml-1">Order</NavLink>
+                                <NavLink to="#" onClick={addToCart} className="btn-primary btn_1 small gradient pulse_bt mb-1 ml-1">Order</NavLink>
                             </Col>
                         </Row>
                         </div>

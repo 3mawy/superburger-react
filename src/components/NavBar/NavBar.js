@@ -43,6 +43,7 @@ const NavBar = (props) => {
     const actions = nightModeSlice.actions
     const colorModeToggle = () => dispatch(actions.toggle())
     const colorMode = useSelector(state => state.nightMode.mode)
+
     return (
         <nav className="fixed-top">
             <header className={` header_in clearfix ${scrollState} ${props.color}`}>
