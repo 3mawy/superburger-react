@@ -6,11 +6,10 @@ import {useDispatch} from "react-redux";
 import cartSlice from "../../../redux/slices/cartSlice";
 
 const CardWithText = ({color, name, price}) => {
-    let product = {id: "5", name: "ana"}
+    let product = {id: "5", name: "ana", price: "53", img: "https://via.placeholder.com/150"}
 
     const dispatch = useDispatch()
     const actions = cartSlice.actions
-    const removeFromCart = () => dispatch(actions.removeFromCart({id: product.id }))
     const addToCart = () => dispatch(actions.addToCart({product: product }))
     return (
             <Col className="p-0 pr-2 pl-2" >
