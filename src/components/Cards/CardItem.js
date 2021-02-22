@@ -1,9 +1,7 @@
-import Button from "react-bootstrap/Button";
-
 import sample from './sample.jpeg'
 import {Col} from "react-bootstrap";
 
-const CardItem = (props) => {
+const CardItem = ({item}) => {
     return (
         <Col >
             <div className="strip" >

@@ -1,8 +1,6 @@
-import Button from "react-bootstrap/Button";
-import sample from '../sample.jpeg'
-import {Col, Container, Row} from "react-bootstrap";
-import CardItem from "../CardItem";
+import {Container, Row} from "react-bootstrap";
 import CardWithText from "./CardWithText";
+import PropTypes from "prop-types";
 
 let items = [
     { id: 1, item: "Dog" },
@@ -17,15 +15,17 @@ let items = [
   ];
 let res = items.map(o => o.item);
 
-const CardWithTextList = (props) => {
+const CardWithTextList = ({items}) => {
     return (
         <Container fluid className="p-0">
             <br/>
             <Row  className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2} >
-            {res.map((item, index) => <CardWithText key={item.id} name={"Cheesy Cheesy"} price={"45"} color={props.color}>{item}</CardWithText>)}
+            {res.map((item, index) => <CardWithText key={item.id} name={"Cheesy Cheesy"} price={45} img={"link"}>{item}</CardWithText>)}
             </Row>
         </Container>
 )
 }
-
+CardWithTextList.propTypes = {
+  items: PropTypes.array
+}
 export default CardWithTextList

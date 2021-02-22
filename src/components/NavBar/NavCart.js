@@ -5,7 +5,8 @@ import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import cartSlice from "../../redux/slices/cartSlice";
 import {cartTotal} from "./helperfunc"
-const NavCart = (props) => {
+
+const NavCart = () => {
 
     const [cartState, setToggleState] = useState("");
 
@@ -19,12 +20,14 @@ const NavCart = (props) => {
     const actions = cartSlice.actions
     const removeFromCart = () => dispatch(actions.removeFromCart({id: product.id}))
 
+    const colorMode = useSelector(state => state.nightMode.mode)
+
     const cartItems = useSelector(state => state.cart.cartItems)
 
     return (
         <div className={`dropdown dropdown-cart `}>
             <a href="#" onClick={cartToggle} className="cart_bt"><strong>2</strong></a>
-            <div className={`dropdown-menu ${cartState} ${props.color}`}>
+            <div className={`dropdown-menu ${cartState} ${colorMode}`}>
                 <ul>
                     {cartItems.map((item, index) =>
                         <li>

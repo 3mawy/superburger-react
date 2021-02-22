@@ -1,5 +1,6 @@
 import {Col, Container, Row} from "react-bootstrap";
 import CategoryCard from "./CategoryCard";
+import PropTypes from "prop-types";
 
 let categories = [
     { id: 1, name: "BEEF" },
@@ -9,7 +10,7 @@ let categories = [
 
   ];
 let res = categories.map(cat => cat.name);
-const CategoryCardList = (props) => {
+const CategoryCardList = ({categories}) => {
                     return (
                         <Container >
                             {/*<br/>*/}
@@ -19,6 +20,8 @@ const CategoryCardList = (props) => {
                         </Container>
                     )
 }
-
+CategoryCardList.propTypes = {
+  categories: PropTypes.array,
+}
 export default CategoryCardList
 

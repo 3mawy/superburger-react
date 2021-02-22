@@ -1,5 +1,7 @@
 import "./style.css"
 import {useSelector} from "react-redux";
+import PropTypes from "prop-types";
+import CategoryCardList from "../../Cards/CategoryCard/CategoryCardList";
 
 const Banner = ({title, desc}) => {
     const colorMode = useSelector(state => state.nightMode.mode)
@@ -10,6 +12,10 @@ const Banner = ({title, desc}) => {
             <i className="icon-food_icon_delivery"></i>
         </div>
     )
+}
+Banner.propTypes = {
+  title: PropTypes.string,
+  desc: PropTypes.string,
 }
 
 export default Banner

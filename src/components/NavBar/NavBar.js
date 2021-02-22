@@ -14,7 +14,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
 
 
-const NavBar = (props) => {
+const NavBar = () => {
 
     const [menuState, setToggleState] = useState("");
     function sideNavToggle() {
@@ -46,7 +46,7 @@ const NavBar = (props) => {
 
     return (
         <nav className="fixed-top">
-            <header className={` header_in clearfix ${scrollState} ${props.color}`}>
+            <header className={` header_in clearfix ${scrollState} ${colorMode}`}>
                 <Container className="">
                      <a className={`night-mode-icon  ${colorMode}`}
                             onClick={colorModeToggle}>
@@ -63,13 +63,13 @@ const NavBar = (props) => {
                     <ul id="top_menu" className={`top_menu ${scrollState}`}>
                         <li><NavLink to="/register" id="sign-in" className="login">Sign In</NavLink></li>
                         <li >
-                            <NavCart color = {props.color}/>
+                            <NavCart />
                         </li>
                     </ul>
                     <a  className="open_close" onClick={sideNavToggle}>
                         <i className="icon_menu"></i><span>Menu</span>
                     </a>
-                    <nav  className={`main-menu ${menuState} ${scrollState} ${props.color}`} >
+                    <nav  className={`main-menu ${menuState} ${scrollState} ${colorMode}`} >
                         <div id="header_menu">
                             <a  className="open_close" onClick={sideNavToggle}>
                                 <i className="icon_close"></i><span>Menu</span>
@@ -99,7 +99,7 @@ const NavBar = (props) => {
                     </nav>
                 </Container>
             </header>
-        <NavContactUs className={`${scrollState} ${props.color}`}/>
+        <NavContactUs className={`${scrollState} ${colorMode}`}/>
 
         </nav>
 
