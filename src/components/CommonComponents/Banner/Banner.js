@@ -1,10 +1,10 @@
 import "./style.css"
 import {useSelector} from "react-redux";
 import PropTypes from "prop-types";
-import CategoryCardList from "../../Cards/CategoryCard/CategoryCardList";
+import {selectColorMode} from "../../../redux/slices/nightModeSlice";
 
 const Banner = ({title, desc}) => {
-    const colorMode = useSelector(state => state.nightMode.mode)
+    const colorMode = useSelector(selectColorMode)
     return (
         <div className={`promo ${colorMode}`}>
             <h3>{title}</h3>

@@ -3,8 +3,9 @@ import {
 } from "react-router-dom";
 import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {removeFromCart} from "../../redux/slices/cartSlice";
-import {cartTotal} from "./helperfunc"
+import {removeFromCart, selectCartItems} from "../../redux/slices/cartSlice";
+import {cartTotal, cartTotalCount} from "./helperfunc"
+import {selectColorMode} from "../../redux/slices/nightModeSlice";
 
 const NavCart = () => {
 
@@ -19,13 +20,11 @@ const NavCart = () => {
     const dispatch = useDispatch()
     const removeItemFromCart = () => dispatch(removeFromCart({id: product.id}))
 
-    const colorMode = useSelector(state => state.nightMode.mode)
-
-    const cartItems = useSelector(state => state.cart.cartItems)
-
+    const colorMode = useSelector(selectColorMode)
+    const cartItems = useSelector(selectCartItems)
     return (
         <div className={`dropdown dropdown-cart `}>
-            <a href="#" onClick={cartToggle} className="cart_bt"><strong>2</strong></a>
+            <a href="#" onClick={cartToggle} className="cart_bt"><strong>{cartTotalCount(cartItems)}</strong></a>
             <div className={`dropdown-menu ${cartState} ${colorMode}`}>
                 <ul>
                     {cartItems.map((item, index) =>

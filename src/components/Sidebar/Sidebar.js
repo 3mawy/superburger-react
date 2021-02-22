@@ -1,9 +1,10 @@
 import "../../css/listing.css"
 import {useSelector} from "react-redux";
 import {useState} from "react";
+import {selectColorMode} from "../../redux/slices/nightModeSlice";
 
 const Sidebar = () => {
-    const colorMode = useSelector(state => state.nightMode.mode)
+    const colorMode = useSelector(selectColorMode)
     const [sideMenuCategories, setSideMenuCategories] = useState("");
     function setSideCategories() {
         setSideMenuCategories(sideMenuCategories === "" ? "show" : "");

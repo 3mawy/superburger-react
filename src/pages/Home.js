@@ -6,9 +6,10 @@ import MyOwlCarousel from "../components/OwlCarousel/MyOwlCarousel";
 import HighlightsBrand from "../components/HighlightsBrand/HighlightsBrand";
 import PropTypes from "prop-types";
 import {useSelector} from "react-redux";
+import {selectColorMode} from "../redux/slices/nightModeSlice";
 
 const Home = () => {
-    const colorMode = useSelector(state => state.nightMode.mode)
+    const colorMode = useSelector(selectColorMode)
     return (
         <>
             <HeroCarousel/>

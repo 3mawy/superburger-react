@@ -17,4 +17,5 @@ const nightModeSlice = createSlice({
 })
 
 export const { toggle } = nightModeSlice.actions
+export const selectColorMode = (state) => state.nightMode.mode
 export default nightModeSlice.reducer

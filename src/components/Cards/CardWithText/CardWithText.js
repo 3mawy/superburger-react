@@ -5,12 +5,12 @@ import {NavLink} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import PropTypes from 'prop-types';
 import {addToCart} from "../../../redux/slices/cartSlice"
+import {selectColorMode} from "../../../redux/slices/nightModeSlice";
 
 const CardWithText = ({id, name, price, img}) => {
     let product = {id: "5", name: "ana", price: "53", img: "https://via.placeholder.com/150"}
 
-    const colorMode = useSelector(state => state.nightMode.mode)
-    
+    const colorMode = useSelector(selectColorMode)
     const dispatch = useDispatch()
     const addItemToCart = () => dispatch(addToCart({product: product}))
     return (

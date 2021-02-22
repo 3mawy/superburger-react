@@ -8,7 +8,7 @@ const cartSlice = createSlice({
     },
     reducers: {
         addToCart: (state, action) => {
-            const cartItems = state.cartItems.slice();
+            const cartItems = state.cartItems;
             let productAlreadyInCart = false;
 
             cartItems.forEach((cItem) => {
@@ -31,10 +31,11 @@ const cartSlice = createSlice({
         },
 
         removeFromCart: (state, action) => {
-            state.cartItems = state.cartItems.slice().filter((a) => a.id !== action.payload.id)
+            state.cartItems = state.cartItems.filter((a) => a.id !== action.payload.id)
         }
     },
 })
 
 export const { addToCart, removeFromCart} = cartSlice.actions
+export const selectCartItems = (state) => state.cart.cartItems
 export default cartSlice.reducer

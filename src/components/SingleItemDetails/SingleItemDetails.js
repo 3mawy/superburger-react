@@ -2,9 +2,10 @@ import {Col, Container, Row} from "react-bootstrap";
 import sample from './sample.jpeg'
 import ImgBox from "./ImgBox";
 import {useSelector} from "react-redux";
+import {selectColorMode} from "../../redux/slices/nightModeSlice";
 
 const SingleItemDetails = () => {
-    const colorMode = useSelector(state => state.nightMode.mode)
+    const colorMode = useSelector(selectColorMode)
     return (
         <Row className="row pt-3">
             <Col lg={5}>

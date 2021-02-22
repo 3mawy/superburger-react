@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import Banner from "../Banner/Banner";
 import {useSelector} from "react-redux";
+import {selectColorMode} from "../../../redux/slices/nightModeSlice";
 
 const Title = ({title, desc}) => {
-    const colorMode = useSelector(state => state.nightMode.mode)
-
+    const colorMode = useSelector(selectColorMode)
     return (
         <div className="main_title mb-1 mt-4 center ">
             <h2 className={`${colorMode}`}>{title}</h2>

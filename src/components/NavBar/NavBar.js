@@ -3,7 +3,7 @@ import {
 } from "react-router-dom";
 import { useState, useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {toggle} from "../../redux/slices/nightModeSlice";
+import {selectColorMode, toggle} from "../../redux/slices/nightModeSlice";
 
 import "./style.css"
 import logo from './logo_final-trimmy.png'
@@ -41,8 +41,8 @@ const NavBar = () => {
 
     const dispatch = useDispatch()
     const colorModeToggle = () => dispatch(toggle())
-    const colorMode = useSelector(state => state.nightMode.mode)
 
+    const colorMode = useSelector(selectColorMode)
     return (
         <nav className="fixed-top">
             <header className={` header_in clearfix ${scrollState} ${colorMode}`}>

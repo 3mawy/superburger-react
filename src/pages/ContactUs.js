@@ -1,9 +1,10 @@
 import {useEffect} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import { getMenuItems } from "../redux/remotes_thunk/menuItemsThunk"
+import {selectColorMode} from "../redux/slices/nightModeSlice";
 
 const ContactUs = () => {
-    const colorMode = useSelector(state => state.nightMode.mode)
+    const colorMode = useSelector(selectColorMode)
     const dispatch = useDispatch()
 
     useEffect(() => {

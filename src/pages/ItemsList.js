@@ -7,9 +7,10 @@ import Banner from "../components/CommonComponents/Banner/Banner";
 import CardWithText from "../components/Cards/CardWithText/CardWithText";
 import CardWithTextList from "../components/Cards/CardWithText/CardWithTextList";
 import {useSelector} from "react-redux";
+import {selectColorMode} from "../redux/slices/nightModeSlice";
 
 const ItemsList = () => {
-    const colorMode = useSelector(state => state.nightMode.mode)
+    const colorMode = useSelector(selectColorMode)
     return (
         <Container className={`pt-5`}>
             <Row >

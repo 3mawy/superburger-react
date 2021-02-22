@@ -22,6 +22,7 @@ import Home from "./pages/Home";
 import './css/style.css'
 import './css/home.css'
 import './App.css';
+import {selectColorMode} from "./redux/slices/nightModeSlice";
 
 // const selectColorMode = createSelector(
 //
@@ -29,7 +30,7 @@ import './App.css';
 
 
 function App() {
-    const colorMode = useSelector(state => state.nightMode.mode)
+    const colorMode = useSelector(selectColorMode)
     return (
         <Router>
             <NavBar title="aaa" color={colorMode}/>

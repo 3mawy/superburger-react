@@ -1,6 +1,10 @@
 import {Container, Row} from "react-bootstrap";
 import CardWithText from "./CardWithText";
 import PropTypes from "prop-types";
+import {getMenuItems} from "../../../redux/remotes_thunk/menuItemsThunk";
+import {useDispatch, useSelector} from "react-redux";
+import {selectMenuItems} from "../../../redux/slices/menuItemsSlice";
+
 
 let items = [
     { id: 1, item: "Dog" },
@@ -14,11 +18,18 @@ let items = [
     { id: 9, item: "Horse" },
   ];
 let res = items.map(o => o.item);
+    console.log(res)
 
 const CardWithTextList = ({items}) => {
+    const dispatch = useDispatch()
+    const getMenuItemsData = () =>  dispatch(getMenuItems())
+
+    const menuItems = useSelector(selectMenuItems)
+    console.log(menuItems.results)
     return (
         <Container fluid className="p-0">
             <br/>
+            <button onClick={getMenuItemsData}> 555</button>
             <Row  className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2} >
             {res.map((item, index) => <CardWithText key={item.id} name={"Cheesy Cheesy"} price={45} img={"link"}>{item}</CardWithText>)}
             </Row>
