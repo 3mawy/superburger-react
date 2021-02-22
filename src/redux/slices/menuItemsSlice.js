@@ -47,4 +47,4 @@ const menuItemsSlice = createSlice({
     }
 })
 
-export default menuItemsSlice
+export default menuItemsSlice.reducer

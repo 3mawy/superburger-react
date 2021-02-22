@@ -3,12 +3,12 @@ import {
 } from "react-router-dom";
 import { useState, useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {nightModeSlice} from "../../redux/slices/nightModeSlice";
+import {toggle} from "../../redux/slices/nightModeSlice";
 
 import "./style.css"
 import logo from './logo_final-trimmy.png'
 import NavCart from "./NavCart";
-import {Col, Container} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import NavContactUs from "./NavContactUs";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
@@ -40,8 +40,7 @@ const NavBar = () => {
     },[])
 
     const dispatch = useDispatch()
-    const actions = nightModeSlice.actions
-    const colorModeToggle = () => dispatch(actions.toggle())
+    const colorModeToggle = () => dispatch(toggle())
     const colorMode = useSelector(state => state.nightMode.mode)
 
     return (

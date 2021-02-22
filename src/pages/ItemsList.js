@@ -14,7 +14,7 @@ const ItemsList = () => {
         <Container className={`pt-5`}>
             <Row >
                 <Col lg={3}>
-                <Sidebar color={colorMode}/>
+                <Sidebar />
                 </Col>
                 <Col lg={9}>
                     <Banner title = "Chicken" desc="Have A Taste Of The Best Fried Chicken Sandwiches!" color={colorMode}/>

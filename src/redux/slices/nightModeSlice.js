@@ -16,6 +16,5 @@ export const nightModeSlice = createSlice({
     },
 })
 
-// export const { actions, reducer } = nightModeReducer
-// export const { toggle } = nightModeSlice.actions
-// export default nightModeSlice.reducer
+export const { toggle } = nightModeSlice.actions
+export default nightModeSlice.reducer

@@ -3,7 +3,7 @@ import {
 } from "react-router-dom";
 import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import cartSlice from "../../redux/slices/cartSlice";
+import {removeFromCart} from "../../redux/slices/cartSlice";
 import {cartTotal} from "./helperfunc"
 
 const NavCart = () => {
@@ -17,8 +17,7 @@ const NavCart = () => {
     let product = {id: "5", name: "ana", price: "53", img: "https://via.placeholder.com/150"}
 
     const dispatch = useDispatch()
-    const actions = cartSlice.actions
-    const removeFromCart = () => dispatch(actions.removeFromCart({id: product.id}))
+    const removeItemFromCart = () => dispatch(removeFromCart({id: product.id}))
 
     const colorMode = useSelector(state => state.nightMode.mode)
 
@@ -47,7 +46,7 @@ const NavCart = () => {
                                     </div>
                                 </strong>
                             </strong>
-                            <a onClick={removeFromCart} className="action"><i className="icon_trash_alt"></i></a>
+                            <a onClick={removeItemFromCart} className="action"><i className="icon_trash_alt"></i></a>
                         </li>
                     )}
 
