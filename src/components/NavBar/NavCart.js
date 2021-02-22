@@ -33,14 +33,7 @@ const NavCart = () => {
                             <figure><img src={item.img} data-src="img/menu-thumb-1.jpg" alt=""
                                          width="50" height="50" className="lazy"/></figure>
                             <strong><span>{item.name}</span>{item.price} EGP
-                                <strong style={{
-                                    borderRadius: "50%",
-                                    backgroundColor: "#f0802f",
-                                    padding: ".1rem",
-                                    position: "relative",
-                                    right: "-5.5rem",
-                                    bottom: ".8rem"
-                                }}>
+                                <strong id={`counter_fix`}>
                                     <div style={{position: "relative", bottom: "-1px"}}>
                                         x{item.count}
                                     </div>

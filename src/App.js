@@ -23,6 +23,10 @@ import './css/style.css'
 import './css/home.css'
 import './App.css';
 
+// const selectColorMode = createSelector(
+//
+// )
+
 
 function App() {
     const colorMode = useSelector(state => state.nightMode.mode)
