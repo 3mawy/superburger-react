@@ -5,7 +5,7 @@ const ItemsSingle = () => {
     const colorMode = useSelector(state => state.nightMode.mode)
     return (
         <div className={`container pt-5`}>
-            <SingleItemDetails color={colorMode}/>
+            <SingleItemDetails/>
         </div>
     )
 }
