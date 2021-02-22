@@ -2,7 +2,7 @@ import {createSlice} from '@reduxjs/toolkit'
 
 const initialState = {mode: ""}
 
-export const nightModeSlice = createSlice({
+const nightModeSlice = createSlice({
     name: 'nightMode',
     initialState,
     reducers: {
