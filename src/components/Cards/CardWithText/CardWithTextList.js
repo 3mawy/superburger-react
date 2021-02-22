@@ -31,7 +31,7 @@ const CardWithTextList = ({items}) => {
             <br/>
             <button onClick={getMenuItemsData}> 555</button>
             <Row  className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2} >
-            {res.map((item, index) => <CardWithText key={item.id} name={"Cheesy Cheesy"} price={45} img={"link"}>{item}</CardWithText>)}
+            {res.map((item) => <CardWithText key={item.id} name={"Cheesy Cheesy"} price={45} img={"link"}>{item}</CardWithText>)}
             </Row>
         </Container>
 )

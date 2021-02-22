@@ -12,6 +12,7 @@ import {Container} from "react-bootstrap";
 import NavContactUs from "./NavContactUs";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
+import NavLanguage from "./NavLanguage";
 
 
 const NavBar = () => {
@@ -47,6 +48,7 @@ const NavBar = () => {
         <nav className="fixed-top">
             <header className={` header_in clearfix ${scrollState} ${colorMode}`}>
                 <Container className="">
+                    <NavLanguage/>
                      <a className={`night-mode-icon  ${colorMode}`}
                             onClick={colorModeToggle}>
                     <FontAwesomeIcon icon={colorMode === "" ? faSun : faMoon }

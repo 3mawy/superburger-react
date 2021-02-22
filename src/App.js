@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router
 } from "react-router-dom";
 
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 // models
 import NavBar from './components/NavBar/NavBar';
 import Footer from "./components/Footer/Footer";
@@ -23,17 +23,24 @@ import './css/style.css'
 import './css/home.css'
 import './App.css';
 import {selectColorMode} from "./redux/slices/nightModeSlice";
-
-// const selectColorMode = createSelector(
-//
-// )
+import {useTranslation} from "react-i18next";
+import {selectLanguage} from "./redux/slices/languageSlice";
+import {useEffect} from "react";
 
 
 function App() {
     const colorMode = useSelector(selectColorMode)
+    const lang = useSelector(selectLanguage)
+
+    const [t, i18n] = useTranslation('common');
+    useEffect(() => {
+        i18n.changeLanguage(lang)
+    }, [lang])
+
     return (
         <Router>
             <NavBar title="aaa" color={colorMode}/>
+            <h1 style={{position: "absolute", zIndex: "5000", top:"450px"}} >{t('home.trendingTitle', {framework: 'React'})}</h1>
             <main className={`bg_gray ${colorMode} header-fix-padding`}>
                 <Route exact path="/" component={Home}/>
                 <Route path="/about-us" component={AboutUS}/>
