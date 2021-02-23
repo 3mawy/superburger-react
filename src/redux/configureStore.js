@@ -5,7 +5,6 @@ import languageSlice from "./slices/languageSlice";
 import menuItemsSlice from "./slices/menuItemsSlice";
 import cartSlice from "./slices/cartSlice";
 
-import {localizeReducer } from "react-localize-redux";
 
 const store = configureStore({
     reducer: {

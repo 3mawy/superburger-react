@@ -1,5 +1,17 @@
 {
-    "home": {
-        "trendingTitle": "Trending Sandwiches"
-    }
+  "home": {
+    "trendingTitle": "Trending Sandwiches"
+  },
+  "navbar": {
+    "aboutUs": "ABOUT US!",
+    "contactUs": "CONTACT US",
+    "menu": "MENU",
+    "offers": "OFFERS"
+  },
+  "categories": {
+    "beef": "BEEF",
+    "chicken": "CHICKEN",
+    "snacks": "SNACKS",
+    "drinks": "DRINKS"
+  }
 }

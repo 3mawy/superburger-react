@@ -3,10 +3,10 @@ import CategoryCard from "./CategoryCard";
 import PropTypes from "prop-types";
 
 let categories = [
-    { id: 1, name: "BEEF" },
-    { id: 2, name: "CHICKEN" },
-    { id: 3, name: "SNACKS" },
-    { id: 4, name: "DRINKS" },
+    { id: 1, name: "beef" },
+    { id: 2, name: "chicken" },
+    { id: 3, name: "snacks" },
+    { id: 4, name: "drinks" },
 
   ];
 let res = categories.map(cat => cat.name);

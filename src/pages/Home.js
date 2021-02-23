@@ -7,16 +7,18 @@ import HighlightsBrand from "../components/HighlightsBrand/HighlightsBrand";
 import PropTypes from "prop-types";
 import {useSelector} from "react-redux";
 import {selectColorMode} from "../redux/slices/nightModeSlice";
+import {useTranslation} from "react-i18next";
 
 const Home = () => {
     const colorMode = useSelector(selectColorMode)
+    const [t] = useTranslation('common');
     return (
         <>
             <HeroCarousel/>
             {/*<Title title="Categories" color={colorMode}/>*/}
             <br/>
             <CategoryCardList/>
-            <Title title="Trending Sandwiches" color={colorMode}/>
+            <Title title={t('home.trendingTitle')} color={colorMode}/>
             <MyOwlCarousel/>
             <HighlightsBrand/>
         </>

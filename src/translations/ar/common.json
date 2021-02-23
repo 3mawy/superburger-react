@@ -1,5 +1,18 @@
 {
-    "home": {
-        "trendingTitle": "الساندوتشات الاكثر طلباً"
-    }
+  "home": {
+    "trendingTitle": "الساندوتشات الاكثر طلباً",
+    "A": ""
+  },
+  "navbar": {
+    "aboutUs": "حكايتنا",
+    "contactUs": "تواصل معنا",
+    "menu": "المنيو",
+    "offers": "العروض"
+  },
+  "categories": {
+    "beef": "لحمه",
+    "chicken": "فراخ",
+    "snacks": "المقبلات",
+    "drinks": "المشروبات"
+  }
 }
