@@ -17,7 +17,7 @@ import {useTranslation} from "react-i18next";
 import {selectLanguage} from "../../redux/slices/languageSlice";
 
 
-const NavBar = (className) => {
+const NavBar = () => {
 
     const [menuState, setToggleState] = useState("");
     function sideNavToggle() {
@@ -50,7 +50,7 @@ const NavBar = (className) => {
 
     const [t] = useTranslation('common');
     return (
-        <nav className={`fixed-top ${className}`}>
+        <nav className={`fixed-top `}>
             <header className={` header_in clearfix ${scrollState} ${colorMode} ${lang}`}>
                 <Container className="">
                     <NavLanguage/>

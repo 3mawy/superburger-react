@@ -45,9 +45,9 @@ Author URI: http://themeforest.net/user/Ansonika/
 }
 @font-face {
     font-family: 'DGSahabah';
-    src: url('../translations/ar/fonts/DGSahabah.woff2') format('woff2'),
-    url('../translations/ar/fonts/DGSahabah.woff') format('woff'),
-    url('../translations/ar/fonts/DGSahabah.ttf') format('truetype');
+    src: url('fonts/DGSahabah.woff2') format('woff2'),
+    url('fonts/DGSahabah.woff') format('woff'),
+    url('fonts/DGSahabah.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -3983,7 +3983,6 @@ ul.additional_links li:after {
   border: none;
   background-color: #f2f2f2;
   background-color: rgba(255, 255, 255, 0);
-  border: 1px solid #999;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -3993,16 +3992,8 @@ ul.additional_links li:after {
   color: #444;
   cursor: pointer;
 }
-.styled-select:after {
-  font-family: 'ElegantIcons';
-  color: #222;
-  position: absolute;
-  right: 10px;
-  top: 0;
-}
-.styled-select.lang-selector:after {
-  content: "\e0e3";
-}
+
+
 .styled-select.currency-selector:after {
   content: "\33";
 }

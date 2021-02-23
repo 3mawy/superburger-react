@@ -8,14 +8,14 @@ const NavLanguage = () => {
     const enTrigger = () => dispatch(enLanguage())
     return (
         //temp
-        <div style={{position: "absolute", zIndex: "5000", left:"3rem"}}>
+        <div style={{position: "absolute", zIndex: "5000", left:"3rem", top: ".85rem"}}>
             <div className="styled-select lang-selector">
                 <select>
                     <option onClick={arTrigger}
-                            value="Arabic" selected>Arabic
+                            value="Arabic" selected>Ar
                     </option>
                     <option onClick={enTrigger}
-                            value="English">English
+                            value="English">Eng
                     </option>
                 </select>
             </div>

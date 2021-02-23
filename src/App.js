@@ -39,7 +39,7 @@ function App() {
 
     return (
         <Router>
-            <NavBar className={`nav-bar-ar`} color={colorMode}/>
+            <NavBar color={colorMode}/>
             <main className={`bg_gray ${colorMode} header-fix-padding`}>
                 <Route exact path="/" component={Home}/>
                 <Route path="/about-us" component={AboutUS}/>
