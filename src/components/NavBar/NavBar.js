@@ -14,9 +14,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
 import NavLanguage from "./NavLanguage";
 import {useTranslation} from "react-i18next";
+import {selectLanguage} from "../../redux/slices/languageSlice";
 
 
-const NavBar = () => {
+const NavBar = (className) => {
 
     const [menuState, setToggleState] = useState("");
     function sideNavToggle() {
@@ -45,11 +46,12 @@ const NavBar = () => {
     const colorModeToggle = () => dispatch(toggle())
 
     const colorMode = useSelector(selectColorMode)
+    const lang = useSelector(selectLanguage)
 
     const [t] = useTranslation('common');
     return (
-        <nav className="fixed-top">
-            <header className={` header_in clearfix ${scrollState} ${colorMode}`}>
+        <nav className={`fixed-top ${className}`}>
+            <header className={` header_in clearfix ${scrollState} ${colorMode} ${lang}`}>
                 <Container className="">
                     <NavLanguage/>
                      <a className={`night-mode-icon  ${colorMode}`}

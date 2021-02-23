@@ -43,6 +43,15 @@ Author URI: http://themeforest.net/user/Ansonika/
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+    font-family: 'DGSahabah';
+    src: url('../translations/ar/fonts/DGSahabah.woff2') format('woff2'),
+    url('../translations/ar/fonts/DGSahabah.woff') format('woff'),
+    url('../translations/ar/fonts/DGSahabah.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 [class*=icon-]:before {
   display: inline-block;
   font-family: Glyphter;

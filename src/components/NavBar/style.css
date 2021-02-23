@@ -2,6 +2,7 @@ a:hover {
     text-decoration: none !important;
 }
 
+
 #counter_fix {
     border-radius: 50%;
     background-color: #f0802f;
@@ -20,6 +21,7 @@ a:hover {
 header.header_in.dark {
     background-color: #1e1d1d;
 }
+
 
 header.header_in.dark .main-menu > ul > li > a {
     color: #efe7e7;
@@ -91,7 +93,10 @@ header.header_in.dark ul#top_menu li a:hover {
     color: #efe7e7 !important;
     text-shadow: 2px 2px #242424;
 }
-
+header.ar .offers_btn {
+    height: 38px !important;
+    padding-top: 0px !important;
+}
 .offers_btn:hover {
     color: #ffffff !important;
     text-shadow: 2px 2px #a74e03;
@@ -101,6 +106,10 @@ header.header_in.dark ul#top_menu li a:hover {
 .offers_btn.scrolled {
     height: 30px !important;
     padding-top: 5px !important;
+}
+header.ar .offers_btn.scrolled {
+    height: 33px !important;
+    padding-top: 0px !important;
 }
 
 /* NavBar Logo */
@@ -213,13 +222,14 @@ header.header.sticky .logo_normal {
 header.header.sticky .logo_sticky {
     display: inline-block;
 }
-
+header.header_in.ar {
+    font-family: 'DGSahabah', cursive !important;
+}
 header.header_in {
     padding: 15px 0;
     background-color: #eee;
     position: relative;
     font-family: 'Concert One', cursive;
-
 
 }
 
@@ -382,7 +392,10 @@ header.sticky .main-menu > ul > li:hover > a, header.header_in .main-menu > ul >
         position: absolute;
         width: auto;
     }
+    header.ar .main-menu {
+        transform: translateX(-50.4%);
 
+    }
     .main-menu a {
         white-space: nowrap;
     }
