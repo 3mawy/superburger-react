@@ -65,7 +65,6 @@ CardWithText.propTypes = {
     img: PropTypes.string,
 }
 CardWithText.defaultProps = {
-    id: 88,
     name: "",
     price: "",
     desc: "",

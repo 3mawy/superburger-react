@@ -16,7 +16,7 @@ const SingleItemDetails = () => {
 
     let {id} = useParams();
     const itemData = useSelector(selectSingleMenuItem)
-    const loaded = itemData.status === 'successs'
+    const loaded = itemData.status === 'success'
     useEffect(() => {
         dispatch(getSingleMenuItem(id))
     }, [])

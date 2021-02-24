@@ -25,26 +25,26 @@ const CardWithTextList = () => {
     const dispatch = useDispatch()
 
     const menuItems = useSelector(selectMenuItems)
-    const items = menuItems.menuItems.results
     const loaded = menuItems.status === 'success'
     useEffect(() => {
         dispatch(getMenuItems())
     }, [])
+    const items = menuItems.menuItems.results
 
     return (
         <>
-            {loaded ? (        <Container fluid className="p-0">
-            <br/>
-            <Row className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2}>
-                {items.map((item) =>
+            {loaded ? (<Container fluid className="p-0">
+                <br/>
+                <Row className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2}>
+                    {items.map((item) =>
                         <CardWithText key={item.id} id={item.id}
                                       name={item.name} price={item.price}
                                       desc={item.desc} img={item.img}>
-                            {item}
+                            {console.log(item)}
                         </CardWithText>)
-                }
-            </Row>
-        </Container>):(<Loading/>)}
+                    }
+                </Row>
+            </Container>) : (<Loading/>)}
         </>
 
     )
