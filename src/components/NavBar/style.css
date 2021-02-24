@@ -97,6 +97,10 @@ header.ar .offers_btn {
     height: 38px !important;
     padding-top: 0px !important;
 }
+header.ar .offers_btn.cart {
+    height: 35px !important;
+    padding-top: 6px !important;
+}
 .offers_btn:hover {
     color: #ffffff !important;
     text-shadow: 2px 2px #a74e03;

@@ -9,6 +9,10 @@
     "menu": "المنيو",
     "offers": "العروض"
   },
+  "cart": {
+    "viewCart": "عرض المشتريات",
+    "checkOut": "الدفع"
+  },
   "categories": {
     "beef": "لحمه",
     "chicken": "فراخ",

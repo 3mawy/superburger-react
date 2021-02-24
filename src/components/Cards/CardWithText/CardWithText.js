@@ -8,7 +8,7 @@ import {addToCart} from "../../../redux/slices/cartSlice"
 import {selectColorMode} from "../../../redux/slices/nightModeSlice";
 
 const CardWithText = ({id, name, price, desc, img}) => {
-    let product = {id: "5", name: "ana", price: "53", img: "https://via.placeholder.com/150"}
+    let product = {id: id, name: name, price: price, img: img}
 
     const colorMode = useSelector(selectColorMode)
     const dispatch = useDispatch()

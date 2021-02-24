@@ -6,6 +6,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {removeFromCart, selectCartItems} from "../../redux/slices/cartSlice";
 import {cartTotal, cartTotalCount} from "./helperfunc"
 import {selectColorMode} from "../../redux/slices/nightModeSlice";
+import {useTranslation} from "react-i18next";
 
 const NavCart = () => {
 
@@ -22,6 +23,8 @@ const NavCart = () => {
 
     const colorMode = useSelector(selectColorMode)
     const cartItems = useSelector(selectCartItems)
+
+    const [t] = useTranslation('common');
     return (
         <div className={`dropdown dropdown-cart `}>
             <a href="#" onClick={cartToggle} className="cart_bt"><strong>{cartTotalCount(cartItems)}</strong></a>
@@ -44,9 +47,10 @@ const NavCart = () => {
 
                 </ul>
                 <div className="total_drop">
-                    <div className="clearfix add_bottom_15"><strong>Total</strong><span>{cartTotal(cartItems)} EGP</span></div>
-                    <NavLink to="/checkout" className="btn_1  offers_btn">View Cart</NavLink>
-                    <NavLink to="/checkout" className="btn_1 offers_btn">Checkout</NavLink>
+                    <div className="clearfix add_bottom_15">
+                        <strong>Total</strong><span>{cartTotal(cartItems)} EGP</span></div>
+                    <NavLink to="/checkout" className="btn_1 cart offers_btn">{t('cart.viewCart')}</NavLink>
+                    <NavLink to="/checkout" className="btn_1 cart offers_btn">{t('cart.checkOut')}</NavLink>
                 </div>
             </div>
         </div>
