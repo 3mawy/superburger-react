@@ -4,18 +4,13 @@
     height: 100px;
     position: relative;
     perspective: 200px;
-    margin-top: 5rem !important;
-}
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
 
 @media (max-width: 991px) {
-    .square {
-        display: flex !important;
-        flex: 100% !important;
-        max-width: 100% !important;
-        justify-content: center !important;
-        padding-right: 3rem;
-        margin-top: 2rem !important;
-        margin-bottom: 2rem !important;
+    .square{
+        margin-bottom: 2rem;
     }
 }
 

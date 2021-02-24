@@ -51,7 +51,7 @@ function App() {
                 <Route exact path="/menu/chicken" component={ItemsList}/>
                 <Route exact path="/menu/snacks" component={ItemsList}/>
                 <Route exact path="/menu/drinks" component={ItemsList}/>
-                <Route exact path="/menu/:id" component={ItemsSingle}/>
+                <Route exact path="/menu-item/:id" component={ItemsSingle}/>
                 <Route path="/offers" component={Offers}/>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/register" component={SignIn}/>

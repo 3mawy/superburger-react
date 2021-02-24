@@ -16,7 +16,7 @@ const CardWithText = ({id, name, price, desc, img}) => {
     return (
         <Col className="p-0 pr-2 pl-2">
             <div className={` card-with-side-text ${colorMode}`} style={{border: "0", marginBottom: "1rem"}}>
-                <NavLink to={`/menu/${id}`} className={`${colorMode}`}>
+                <NavLink to={`/menu-item/${id}`} className={`${colorMode}`}>
                     <Row className=" no-gutters">
                         <Col className="col-auto img-wrapper">
                             <img src={img} className="img-fluid hover-zoom" alt=""/>

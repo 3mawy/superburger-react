@@ -32,19 +32,21 @@ const CardWithTextList = () => {
     }, [])
 
     return (
-        <Container fluid className="p-0">
+        <>
+            {loaded ? (        <Container fluid className="p-0">
             <br/>
             <Row className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2}>
-                {loaded ? (items.map((item) =>
+                {items.map((item) =>
                         <CardWithText key={item.id} id={item.id}
                                       name={item.name} price={item.price}
                                       desc={item.desc} img={item.img}>
                             {item}
-                        </CardWithText>))
-                    : (<Loading/>)
+                        </CardWithText>)
                 }
             </Row>
-        </Container>
+        </Container>):(<Loading/>)}
+        </>
+
     )
 }
 CardWithTextList.propTypes = {

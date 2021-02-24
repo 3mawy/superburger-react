@@ -1,8 +1,8 @@
 import "./style.css"
 
-const Loading = () => {
+const Loading = ({className}) => {
 return (
-    <div className="square" >
+    <div className={`square ${className}`} >
         <div></div>
         <div></div>
     </div>

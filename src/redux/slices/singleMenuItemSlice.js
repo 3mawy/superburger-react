@@ -20,5 +20,5 @@ const singleMenuItemSlice = createSlice({
         }
     }
 })
-export const selectSingleMenuItem = (state) => state.menuItem.item
+export const selectSingleMenuItem = (state) => state.menuItem
 export default singleMenuItemSlice.reducer
