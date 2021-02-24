@@ -9,17 +9,17 @@ const menuItemsSlice = createSlice({
 
         },
     extraReducers: {
-        [getMenuItems.pending]: (state, action) => {
+        [getMenuItems.pending]: (state) => {
             state.status = 'loading'
         },
         [getMenuItems.fulfilled]: (state, action) => {
             state.menuItems = action.payload
             state.status = 'success'
         },
-        [getMenuItems.rejected]: (state, action) => {
+        [getMenuItems.rejected]: (state) => {
             state.status = 'failed'
         }
     }
 })
-export const selectMenuItems = (state) => state.menuItems.menuItems
+export const selectMenuItems = (state) => state.menuItems
 export default menuItemsSlice.reducer

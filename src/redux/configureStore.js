@@ -4,6 +4,7 @@ import nightModeSlice from "./slices/nightModeSlice";
 import languageSlice from "./slices/languageSlice";
 import menuItemsSlice from "./slices/menuItemsSlice";
 import cartSlice from "./slices/cartSlice";
+import singleMenuItemSlice from "./slices/singleMenuItemSlice";
 
 
 const store = configureStore({
@@ -11,6 +12,7 @@ const store = configureStore({
         nightMode: nightModeSlice,
         language: languageSlice,
         menuItems: menuItemsSlice,
+        menuItem: singleMenuItemSlice,
         cart: cartSlice,
     }
 })

@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import {addToCart} from "../../../redux/slices/cartSlice"
 import {selectColorMode} from "../../../redux/slices/nightModeSlice";
 
-const CardWithText = ({id, name, price, img}) => {
+const CardWithText = ({id, name, price, desc, img}) => {
     let product = {id: "5", name: "ana", price: "53", img: "https://via.placeholder.com/150"}
 
     const colorMode = useSelector(selectColorMode)
@@ -16,10 +16,10 @@ const CardWithText = ({id, name, price, img}) => {
     return (
         <Col className="p-0 pr-2 pl-2">
             <div className={` card-with-side-text ${colorMode}`} style={{border: "0", marginBottom: "1rem"}}>
-                <NavLink to="/items-single" className={`${colorMode}`}>
+                <NavLink to={`/menu/${id}`} className={`${colorMode}`}>
                     <Row className=" no-gutters">
                         <Col className="col-auto img-wrapper">
-                            <img src={sample} className="img-fluid hover-zoom" alt=""/>
+                            <img src={img} className="img-fluid hover-zoom" alt=""/>
                         </Col>
                         <Col>
                             <div className="card-block px-2">
@@ -33,8 +33,7 @@ const CardWithText = ({id, name, price, img}) => {
                                 </Row>
                                 <Row>
                                     <Col>
-                                        <p className={`card-text mb-1 `}>safaf safaf safaf adfdasga adfdasga agadgdasg
-                                            fadfadf adf agdag adf</p>
+                                        <p className={`card-text mb-1 `}>{desc}</p>
                                     </Col>
                                 </Row>
                                 <Row xs={2} className="align-items-end">
@@ -59,11 +58,17 @@ const CardWithText = ({id, name, price, img}) => {
         </Col>
     )
 }
-
 CardWithText.propTypes = {
     id: PropTypes.number,
     name: PropTypes.string,
     price: PropTypes.number,
     img: PropTypes.string,
+}
+CardWithText.defaultProps = {
+    id: 88,
+    name: "",
+    price: "",
+    desc: "",
+    img: "https://via.placeholder.com/150",
 }
 export default CardWithText
