@@ -1,24 +1,24 @@
-import {Col, Container, Row} from "react-bootstrap";
 import HeroCarousel from "../components/HeroCarosuel/HeroCarousel";
 
-import sample from '../components/Cards/CardWithText/sample.jpeg'
 import Title from "../components/CommonComponents/Title/Title";
-import CategoryCard from "../components/Cards/CategoryCard/CategoryCard";
-import CardItem from "../components/Cards/CardItem";
 import CategoryCardList from "../components/Cards/CategoryCard/CategoryCardList";
 import MyOwlCarousel from "../components/OwlCarousel/MyOwlCarousel";
 import HighlightsBrand from "../components/HighlightsBrand/HighlightsBrand";
 import PropTypes from "prop-types";
 import {useSelector} from "react-redux";
+import {selectColorMode} from "../redux/slices/nightModeSlice";
+import {useTranslation} from "react-i18next";
 
 const Home = () => {
-    const colorMode = useSelector(state => state.nightMode.mode)
+    const colorMode = useSelector(selectColorMode)
+    const [t] = useTranslation('common');
     return (
         <>
             <HeroCarousel/>
-            <Title title="Categories" color={colorMode}/>
+            {/*<Title title="Categories" color={colorMode}/>*/}
+            <br/>
             <CategoryCardList/>
-            <Title title="Trending Sandwiches" color={colorMode}/>
+            <Title title={t('home.trendingTitle')} color={colorMode}/>
             <MyOwlCarousel/>
             <HighlightsBrand/>
         </>

@@ -2885,7 +2885,7 @@ ul#top_menu li a.login:before {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-bottom-color: #e54750;
+  border-bottom-color: #f0802f;
   border-width: 7px;
   margin-left: -7px;
 }

@@ -64,7 +64,7 @@
 .owl-theme.categories_carousel .item a span,
 .item_version_2 a span {
   position: absolute;
-  right: 15px;
+  left: 15px;
   top: 15px;
   display: inline-block;
   line-height: 34px;

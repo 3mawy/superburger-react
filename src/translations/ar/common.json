@@ -1,0 +1,22 @@
+{
+  "home": {
+    "trendingTitle": "الساندوتشات الاكثر طلباً",
+    "A": ""
+  },
+  "navbar": {
+    "aboutUs": "حكايتنا",
+    "contactUs": "تواصل معنا",
+    "menu": "المنيو",
+    "offers": "العروض"
+  },
+  "cart": {
+    "viewCart": "عرض المشتريات",
+    "checkOut": "الدفع"
+  },
+  "categories": {
+    "beef": "لحمه",
+    "chicken": "فراخ",
+    "snacks": "المقبلات",
+    "drinks": "المشروبات"
+  }
+}

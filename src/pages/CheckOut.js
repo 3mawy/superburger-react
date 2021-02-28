@@ -1,9 +1,10 @@
 import '../css/order-sign_up.css'
 import '../css/detail-page.css'
 import {useSelector} from "react-redux";
+import {selectColorMode} from "../redux/slices/nightModeSlice";
 
 const CheckOut = () => {
-    const colorMode = useSelector(state => state.nightMode.mode)
+    const colorMode = useSelector(selectColorMode)
     return (
             <div className="container margin_60_20">
                 <div className="row justify-content-center">

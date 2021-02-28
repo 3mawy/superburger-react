@@ -1,31 +1,55 @@
-import Button from "react-bootstrap/Button";
-import sample from '../sample.jpeg'
-import {Col, Container, Row} from "react-bootstrap";
-import CardItem from "../CardItem";
+import {Container, Row} from "react-bootstrap";
 import CardWithText from "./CardWithText";
+import PropTypes from "prop-types";
+import {getMenuItems, getSingleMenuItem} from "../../../redux/remotes_thunk/menuItemsThunk";
+import {useDispatch, useSelector} from "react-redux";
+import {selectMenuItems} from "../../../redux/slices/menuItemsSlice";
+import {useEffect} from "react";
+import Loading from "../../Loading/Loading";
 
-let items = [
-    { id: 1, item: "Dog" },
-    { id: 2, item: "Bird" },
-    { id: 3, item: "Cat" },
-    { id: 4, item: "Mouse" },
-    { id: 5, item: "Horse" },
-    { id: 6, item: "Horse" },
-    { id: 7, item: "Horse" },
-    { id: 8, item: "Horse" },
-    { id: 9, item: "Horse" },
-  ];
-let res = items.map(o => o.item);
 
-const CardWithTextList = (props) => {
+let res = [
+    {id: 1, name: "Dog"},
+    {id: 2, name: "Bird"},
+    {id: 3, name: "Cat"},
+    {id: 4, name: "Mouse"},
+    {id: 5, name: "Horse"},
+    {id: 6, name: "Horse"},
+    {id: 7, name: "Horse"},
+    {id: 8, name: "Horse"},
+    {id: 9, name: "Horse"},
+];
+console.log(res)
+
+const CardWithTextList = () => {
+    const dispatch = useDispatch()
+
+    const menuItems = useSelector(selectMenuItems)
+    const loaded = menuItems.status === 'success'
+    useEffect(() => {
+        dispatch(getMenuItems())
+    }, [])
+    const items = menuItems.menuItems.results
+
     return (
-        <Container fluid className="p-0">
-            <br/>
-            <Row  className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2} >
-            {res.map((item, index) => <CardWithText key={item.id} name={"Cheesy Cheesy"} price={"45"} color={props.color}>{item}</CardWithText>)}
-            </Row>
-        </Container>
-)
-}
+        <>
+            {loaded ? (<Container fluid className="p-0">
+                <br/>
+                <Row className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2}>
+                    {items.map((item) =>
+                        <CardWithText key={item.id} id={item.id}
+                                      name={item.name} price={item.price}
+                                      desc={item.desc} img={item.img}>
+                            {console.log(item)}
+                        </CardWithText>)
+                    }
+                </Row>
+            </Container>) : (<Loading/>)}
+        </>
 
+    )
+}
+CardWithTextList.propTypes = {
+    items: PropTypes.array
+}
 export default CardWithTextList

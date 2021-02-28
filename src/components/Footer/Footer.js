@@ -1,7 +1,9 @@
 import "./style.css"
 import {useSelector} from "react-redux";
+import {selectColorMode} from "../../redux/slices/nightModeSlice";
+
 const Footer = () => {
-    const colorMode = useSelector(state => state.nightMode.mode)
+    const colorMode = useSelector(selectColorMode)
     return (
         <>
             <footer className={colorMode}>
