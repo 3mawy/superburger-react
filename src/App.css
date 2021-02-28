@@ -1,25 +1,28 @@
+
+
 .night-mode-icon {
-  color: #ff8416;
-  margin: 1.3rem;
-  margin-left: 2rem !important;
-  font-size: 1.4rem;
-  position: absolute;
-  z-index: 99999999
+    color: #ff8416;
+    font-size: 1.22rem;
+    position: absolute;
+    z-index: 99999999
 }
+
 .night-mode-icon.dark {
-  color: #ede5e5;
+    color: #ede5e5;
 }
+
 .night-mode-icon:hover {
-  color: #c43a41 !important;
+    color: #fb7800 !important;
 }
+
 .night-mode-icon.dark:hover {
-  color: #c43a41 !important;
+    color: #f0802f !important;
 }
+
 @media (max-width: 991px) {
-  .night-mode-icon {
-  margin: 1rem;
-  margin-left: 3.5rem !important;
-  font-size: 1.15rem;
-  right: 4.4rem
-  }
+    .night-mode-icon {
+        margin-right: 1rem !important;
+        font-size: 1.15rem;
+        right: 4.4rem
+    }
 }

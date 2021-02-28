@@ -1,5 +1,8 @@
 import "./style.css"
+import {useSelector} from "react-redux";
+import {selectColorMode} from "../../redux/slices/nightModeSlice";
 const ConfirmedOrder = () => {
+    const colorMode = useSelector(selectColorMode)
     return (
         <div className="container margin_60_40">
             <div className="row justify-content-center">

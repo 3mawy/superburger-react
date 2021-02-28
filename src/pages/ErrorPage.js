@@ -1,7 +1,10 @@
 import error from "../css/img/404.svg"
 import {Container} from "react-bootstrap";
+import {useSelector} from "react-redux";
+import {selectColorMode} from "../redux/slices/nightModeSlice";
 
 const ErrorPage = () => {
+    const colorMode = useSelector(selectColorMode)
     return (
         <Container>
             <div id="error_page">

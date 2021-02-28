@@ -1,14 +1,18 @@
 import "./style.css"
-const Footer = ({color}) => {
+import {useSelector} from "react-redux";
+import {selectColorMode} from "../../redux/slices/nightModeSlice";
+
+const Footer = () => {
+    const colorMode = useSelector(selectColorMode)
     return (
         <>
-            <footer className={color}>
+            <footer className={colorMode}>
                 {/*<div className={`wave gray footer `}></div>*/}
                 <div className="container margin_60_40 fix_mobile">
 
                     <div className="row">
                         <div className="col-lg-3 col-md-6">
-                            <h3 className={color} data-target="#collapse_1">Quick Links</h3>
+                            <h3 className={colorMode} data-target="#collapse_1">Quick Links</h3>
                             <div className="collapse dont-collapse-sm links" id="collapse_1">
                                 <ul>
                                     <li><a href="about.html">About us</a></li>
@@ -21,7 +25,7 @@ const Footer = ({color}) => {
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
-                            <h3 className={color} data-target="#collapse_2">Categories</h3>
+                            <h3 className={colorMode} data-target="#collapse_2">Categories</h3>
                             <div className="collapse dont-collapse-sm links" id="collapse_2">
                                 <ul>
                                     <li><a href="grid-listing-filterscol.html">Top Categories</a></li>
@@ -32,7 +36,7 @@ const Footer = ({color}) => {
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
-                            <h3 className={color} data-target="#collapse_3">Contacts</h3>
+                            <h3 className={colorMode} data-target="#collapse_3">Contacts</h3>
                             <div className="collapse dont-collapse-sm contacts" id="collapse_3">
                                 <ul>
                                     <li><i className="icon_house_alt"></i>97845 Baker st. 567<br></br>Los Angeles - US</li>
@@ -42,7 +46,7 @@ const Footer = ({color}) => {
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
-                            <h3 className={color} data-target="#collapse_4">Keep in touch</h3>
+                            <h3 className={colorMode} data-target="#collapse_4">Keep in touch</h3>
                             <div className="collapse dont-collapse-sm" id="collapse_4">
                                 <div id="newsletter">
                                     <div id="message-newsletter"></div>
