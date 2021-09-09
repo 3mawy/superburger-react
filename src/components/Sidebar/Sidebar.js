@@ -1,157 +1,120 @@
-import "../../css/listing.css"
-import {useSelector} from "react-redux";
-import {useState} from "react";
+import "./style.css"
+import {useDispatch, useSelector} from "react-redux";
+import {useEffect, useState} from "react";
 import {selectColorMode} from "../../redux/slices/nightModeSlice";
+import {selectCategories} from "../../redux/slices/categoriesSlice";
+import {getMenuItems} from "../../redux/remotes_thunk/menuItemsThunk";
+import {selectLanguage} from "../../redux/slices/languageSlice";
+import {useScrollState} from "../../hooks/scrollHook";
 
-const Sidebar = () => {
+const Sidebar = ({orderBySearch, FilterBySearch}) => {
     const colorMode = useSelector(selectColorMode)
+    const lang = useSelector(selectLanguage)
+    const isScrolled = useScrollState();
+
     const [sideMenuCategories, setSideMenuCategories] = useState("");
+    const dispatch = useDispatch()
+
+    const categoriesData = useSelector(selectCategories)
+    const categories = categoriesData.categories.results
+
     function setSideCategories() {
         setSideMenuCategories(sideMenuCategories === "" ? "show" : "");
     }
 
     const [sideMenuRating, setSideMenuRating] = useState("");
+
     function setSideRating() {
         setSideMenuRating(sideMenuRating === "" ? "show" : "");
     }
 
     const [filtersToggleState, setFiltersState] = useState("");
+
     function toggleFilters() {
         setFiltersState(filtersToggleState === "" ? "show" : "");
     }
-    return (
-        <aside id="sidebar_fixed">
 
-            <a onClick={toggleFilters} className={`open_filters btn_filters ${colorMode}`}><i
-                className="icon_adjust-vert"></i><span>Filters</span></a>
+    const [orderBy, setOrderBy] = useState('');
+    const [filterBy, setFilterBy] = useState('');
+
+    // useEffect(() => {
+    //     dispatch(getMenuItems({cat: filterBy}))
+    // }, [filterBy])
+
+    function OrderBy(ordering) {
+        setOrderBy(ordering)
+        orderBySearch(ordering);
+    }
+
+    function FilterBy(filter) {
+        setFilterBy(filter)
+        orderBySearch(filter);
+    }
+
+    return (
+        <aside id="sidebar_fixed" className={`${lang === 'ar' ? ('text-right') : null} ${isScrolled}`}>
+
+            <a onClick={toggleFilters} className={`open_filters btn_filters ${colorMode} ${filtersToggleState}`}><i
+                className="icon_adjust-vert"/><span>Filters</span></a>
 
             <div className={`filter_col ${colorMode} ${filtersToggleState}`}>
                 <div className="inner_bt clearfix">Filters<a onClick={toggleFilters} className="open_filters"><i
-                    className="icon_close"></i></a></div>
-                <div className="filter_type ">
-                    <h4><a href="#filter_1" data-toggle="collapse" className={`opened ${colorMode}`}>Sort</a></h4>
-                    <div className="collapse show" id="filter_1">
+                    className="icon_close"/></a></div>
+                <div className="filter_type last">
+                    <h4><a data-toggle="collapse" className={`opened ${colorMode} text-uppercase concert-one`}>Sort</a></h4>
+                    <div className="collapse show pl-3" id="filter_1">
                         <ul>
                             <li>
                                 <label className="container_radio">Top Rated
-                                    <input type="radio" name="filter_sort" checked=""/>
-                                    <span className="checkmark"></span>
+                                    <input type="radio" name="filter_sort" onClick={() => OrderBy('-score')}/>
+                                    <span className="checkmark"/>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label className="container_radio" onClick={() => OrderBy('score')}>Price: Low To
+                                    High
+                                    <input type="radio" name="filter_sort"/>
+                                    <span className="checkmark"/>
                                 </label>
                             </li>
                             <li>
-                                <label className="container_radio">Reccomended
+                                <label className="container_radio" onClick={() => OrderBy('-score')}>Price: High
+                                    To Low
                                     <input type="radio" name="filter_sort"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_radio">Price: low to high
-                                    <input type="radio" name="filter_sort"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_radio">Up to 15% off
-                                    <input type="radio" name="filter_sort"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_radio">All Offers
-                                    <input type="radio" name="filter_sort"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_radio">Distance
-                                    <input type="radio" name="filter_sort"/>
-                                    <span className="checkmark"></span>
+                                    <span className="checkmark"/>
                                 </label>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="filter_type">
-                    <h4><a href="#filter_2" onClick={setSideCategories} data-toggle="collapse" className={`closed ${colorMode}`}>Categories</a></h4>
-                    <div className={`collapse ${sideMenuCategories}`} id="filter_2">
+                    <h4><a onClick={setSideCategories} data-toggle="collapse"
+                           className={`closed ${colorMode} text-uppercase concert-one`}>Categories</a></h4>
+                    <div className={`collapse show pl-3 text-capitalize ${sideMenuCategories}`} id="filter_2">
                         <ul>
                             <li>
-                                <label className="container_check">Pizza - Italian <small>12</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
+                                <label className="container_radio">All
+                                    <input type="radio" name="category_sort" onClick={() => setFilterBy('')}
+                                           checked={filterBy === ''}/>
+                                    <span className="checkmark"/>
                                 </label>
                             </li>
-                            <li>
-                                <label className="container_check">Japanese - Sushi <small>24</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_check">Burghers <small>23</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_check">Vegetarian <small>11</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_check">Bakery <small>18</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_check">Chinese <small>12</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_check">Mexican <small>15</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
+                            {categories ? (
+                                categories.map((cat) =>
+                                    <li>
+
+                                        <label className="container_radio">{cat.name}
+                                            <input type="radio" name="category_sort" onClick={() => setFilterBy(cat.id)}
+                                                   checked={cat.id === filterBy}/>
+                                            <span className="checkmark"/>
+                                        </label>
+
+                                    </li>
+                                )) : null}
                         </ul>
                     </div>
                 </div>
-                <div className="filter_type last">
-                    <h4><a href="#filter_4" onClick={setSideRating} data-toggle="collapse" className={`closed ${colorMode}`}>Rating</a></h4>
-                    <div className={`collapse ${sideMenuRating}`} id="filter_4">
-                        <ul>
-                            <li>
-                                <label className="container_check">Superb 9+ <small>06</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_check">Very Good 8+ <small>12</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_check">Good 7+ <small>17</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label className="container_check">Pleasant 6+ <small>43</small>
-                                    <input type="checkbox"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <p><a href="#0" className="btn_1  full-width">Filter</a></p>
             </div>
         </aside>
 
@@ -159,3 +122,5 @@ const Sidebar = () => {
 }
 
 export default Sidebar
+
+

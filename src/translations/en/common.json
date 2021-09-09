@@ -15,7 +15,7 @@
   "categories": {
     "beef": "BEEF",
     "chicken": "CHICKEN",
-    "snacks": "SNACKS",
-    "drinks": "DRINKS"
+    "sides": "SIDES",
+    "specials": "SPECIALS"
   }
 }

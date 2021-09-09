@@ -1,63 +1,86 @@
-import {
-    Route,
-    BrowserRouter as Router
-} from "react-router-dom";
+import './App.css';
 
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 // models
 import NavBar from './components/NavBar/NavBar';
 import Footer from "./components/Footer/Footer";
 import AboutUS from "./pages/AboutUs";
-import CheckOut from "./pages/CheckOut";
-import ContactUs from "./pages/ContactUs";
-import ErrorPage from "./pages/ErrorPage";
+import CartDetails from "./pages/CartDetails/CartDetails";
+import CheckOut from "./pages/CheckOut/CheckOut";
+import ContactUs from "./pages/ContactUs/ContactUs";
 import ItemsList from "./pages/ItemsList";
 import Offers from "./pages/Offers";
-import Profile from "./pages/Profile";
+import Profile from "./pages/Profile/Profile";
 import SignIn from "./pages/SignIn";
 import ItemsSingle from "./pages/ItemsSingle";
 import ConfirmedOrder from "./pages/ConfirmedOrder/ConfirmedOrder";
 import Home from "./pages/Home";
-// style
-import './css/style.css'
-import './css/home.css'
-import './App.css';
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 import {selectColorMode} from "./redux/slices/nightModeSlice";
 import {useTranslation} from "react-i18next";
 import {selectLanguage} from "./redux/slices/languageSlice";
-import {useEffect} from "react";
-
+import {useEffect, useState} from "react";
+import OffersSingle from "./pages/OffersSingle";
+import NotFound from "./components/CommonComponents/NotFound/NotFound";
+import {Switch} from "react-router";
+import {useAlertState} from "./hooks/alertHook";
+import {isAuthSelector} from "./redux/slices/userSlice";
+import {getCurrentUserData} from "./redux/remotes_thunk/userThunk";
+import {getCurrentUserOrders} from "./redux/remotes_thunk/orderThunk";
 
 function App() {
+    const dispatch = useDispatch();
+
     const colorMode = useSelector(selectColorMode)
     const lang = useSelector(selectLanguage)
-
     const [t, i18n] = useTranslation('common');
     useEffect(() => {
         i18n.changeLanguage(lang)
+        console.log('aaaaaaaaaaaaaaa')
     }, [lang])
+    const [isAuth, setIsAuth] = useState(useSelector(isAuthSelector));
+
+    useEffect(() => {
+            dispatch(getCurrentUserData())
+            dispatch(getCurrentUserOrders())
+    }, [isAuth])
+    // useRefreshToken();
+
+    //Alert
+    useAlertState()
 
     return (
         <Router>
-            <NavBar color={colorMode}/>
-            <main className={`bg_gray ${colorMode} header-fix-padding`}>
-                <Route exact path="/" component={Home}/>
-                <Route path="/about-us" component={AboutUS}/>
-                <Route path="/checkout" component={CheckOut}/>
-                <Route path="/contact-us" component={ContactUs}/>
-                <Route path="/error" component={ErrorPage}/>
-                <Route exact path="/menu" component={ItemsList}/>
-                <Route exact path="/menu/beef" component={ItemsList}/>
-                <Route exact path="/menu/chicken" component={ItemsList}/>
-                <Route exact path="/menu/snacks" component={ItemsList}/>
-                <Route exact path="/menu/drinks" component={ItemsList}/>
-                <Route exact path="/menu-item/:id" component={ItemsSingle}/>
-                <Route path="/offers" component={Offers}/>
-                <Route path="/profile" component={Profile}/>
-                <Route path="/register" component={SignIn}/>
-                <Route path="/confirm" component={ConfirmedOrder}/>
+            <NavBar className={`bg_gray ${lang}`}/>
+            <main className={`bg_gray ${colorMode} ${lang} header-fix-padding`}>
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/login" component={Login}/>
+                    <Route exact path="/signup" component={Signup}/>
+                    <Route exact path="/about-us" component={AboutUS}/>
+                    <Route exact path="/cart" component={CartDetails}/>
+                    <Route exact path="/checkout" component={CheckOut}/>
+                    <Route exact path="/contact-us" component={ContactUs}/>
+                    <Route exact path="/success" component={ConfirmedOrder}/>
+
+                    <Route exact path="/menu" component={ItemsList}/>
+                    // TODO:REFACTOR
+
+                    <Route exact path="/menu/:cat" component={ItemsList}/>
+
+                    <Route exact path="/menu-items/:id" component={ItemsSingle}/>
+                    <Route exact path="/offers" component={Offers}/>
+                    <Route exact path="/offers/:id" component={OffersSingle}/>
+                    <Route exact path="/profile" component={Profile}/>
+                    <Route exact path="/register" component={SignIn}/>
+                    <Route exact path="/confirm" component={ConfirmedOrder}/>
+                    <Route path="*" component={NotFound}/>
+                </Switch>
+
             </main>
-            <Footer color={colorMode}/>
+            <Footer/>
         </Router>
 
     )
@@ -66,6 +89,18 @@ function App() {
 export default App
 
 
+// <Route exact path="/menu/chicken" render={(props) => (
+//     <ItemsList {...props} cat={1}/>
+// )}/>
+// <Route exact path="/menu/beef" render={(props) => (
+//     <ItemsList {...props} cat={2}/>
+// )}/>
+// <Route exact path="/menu/:name" render={(props) => (
+//     <ItemsList {...props} cat={3}/>
+// )}/>
+// <Route exact path="/menu/specials" render={(props) => (
+//     <ItemsList {...props} cat={4}/>
+// )}/>
 //
 // class App extends Component {
 //   state = {
@@ -108,7 +143,7 @@ export default App
 //         {/*      <Route path="/checkout" render={(props) => (*/}
 //         {/*        <CheckOut {...props} color={colorMode} />*/}
 //         {/*        )}/>*/}
-//
+
 //         {/*      <Route path="/contact-us" render={(props) => (*/}
 //         {/*        <ContactUs {...props} color={colorMode} />*/}
 //         {/*        )}/>*/}

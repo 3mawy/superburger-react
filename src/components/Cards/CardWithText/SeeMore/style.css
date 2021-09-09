@@ -1,0 +1,8 @@
+.show-more-less {
+    color: rgb(225, 74, 82) !important;
+    font-size: 14px;
+}
+
+.show-more-less:hover {
+    color: rgb(151, 50, 55) !important;
+}

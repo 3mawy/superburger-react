@@ -4578,15 +4578,17 @@ footer .links ul li a:after {
   text-transform: uppercase;
   margin: 35px 0 10px 0;
   text-transform: uppercase;
+
 }
 .follow_us ul {
-  margin: 0 0 25px 0;
+  margin: 0 !important;
   padding: 0;
   list-style: none;
 }
 .follow_us ul li {
   display: inline-block;
   margin: 0 10px 0 0;
+
 }
 .follow_us ul li a {
   display: block;
@@ -4899,7 +4901,7 @@ ul.additional_links li:after {
   background: #e54750;
 }
 .container_radio:hover .checkmark {
-  border: 2px solid #e54750;
+  border: 3px solid #f0802f;
 }
 
 .form-control {
@@ -4962,6 +4964,7 @@ ul.additional_links li:after {
   -ms-border-radius: 3px;
   border-radius: 3px;
   margin: 0 2px;
+
 }
 .pagination_fg a:hover {
   background-color: #f0f0f0;

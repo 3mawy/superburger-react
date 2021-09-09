@@ -6,15 +6,16 @@ const languageSlice = createSlice({
     name: 'language',
     initialState,
     reducers: {
-        arLanguage(state) {
-                state.language = "ar"
-        },
-        enLanguage(state) {
+        toggle(state) {
+            if (state.language === "ar") {
                 state.language = "en"
+            } else {
+                state.language = "ar"
+            }
         }
     },
 })
 
-export const { arLanguage, enLanguage } = languageSlice.actions
+export const {toggle} = languageSlice.actions
 export const selectLanguage = (state) => state.language.language
 export default languageSlice.reducer

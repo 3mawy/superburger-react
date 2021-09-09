@@ -1,0 +1,111 @@
+body {
+    background: #18d0f0
+}
+
+/* Smoke container */
+
+#smoke {
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 3;
+    width: 1px;
+    height: 160px;
+    left: 4.8rem;
+    top: -.7rem;
+}
+
+/* smoke balls */
+
+#smoke span {
+    display: block;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border: 35px solid rgba(239, 238, 238, 0.7);
+    border-radius: 35px;
+    opacity: 0;
+    transform: scale(0.2);
+}
+
+.dark #smoke span {
+    border: 35px solid rgb(66, 66, 66);
+
+}
+
+.en #smoke {
+    transform: rotate(270deg);
+
+    left: 5.2rem;
+    top: -.7rem;
+
+}
+
+/* Smoke animation */
+
+@keyframes smokeL {
+    0% {
+        transform: scale(0.05) translate(0, 0)
+    }
+    10% {
+        opacity: 1;
+        transform: scale(0.2) translate(0, -5px)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(.4) translate(-20px, -130px)
+    }
+}
+
+@keyframes smokeR {
+    0% {
+        transform: scale(0.05) translate(0, 0)
+    }
+    10% {
+        opacity: .5;
+        transform: scale(0.2) translate(0, -5px)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(.4) translate(20px, -130px)
+    }
+}
+
+#smoke .s0 {
+    animation: smokeL 8s 0s infinite
+}
+
+#smoke .s1 {
+    animation: smokeR 8s 1s infinite
+}
+
+#smoke .s2 {
+    animation: smokeL 8s 2s infinite
+}
+
+#smoke .s3 {
+    animation: smokeR 8s 1s infinite
+}
+
+#smoke .s4 {
+    animation: smokeL 8s 3s infinite
+}
+
+#smoke .s5 {
+    animation: smokeR 8s 3s infinite
+}
+
+#smoke .s6 {
+    animation: smokeL 8s 4s infinite
+}
+
+#smoke .s7 {
+    animation: smokeR 8s 5s infinite
+}
+
+#smoke .s8 {
+    animation: smokeL 8s 6s infinite
+}
+
+#smoke .s9 {
+    animation: smokeR 8s 7s infinite
+}

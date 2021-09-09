@@ -1,17 +1,32 @@
+.loading_margin {
+    margin-top: 7rem;
+}
+
+.ar .square {
+    right: 50%;
+}
 
 .square {
     width: 100px;
     height: 100px;
     position: relative;
     perspective: 200px;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);}
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 @media (max-width: 991px) {
-    .square{
+    .square {
         margin-bottom: 2rem;
     }
+
+    .loading_margin {
+        margin-left: 6rem;
+    }
+    .ar .loading_margin {
+    margin-left: 0;
+}
 }
 
 .square div {

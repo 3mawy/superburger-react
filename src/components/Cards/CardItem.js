@@ -1,27 +1,43 @@
-import sample from './sample.jpeg'
+import "./style.css"
 import {Col} from "react-bootstrap";
+import {useEffect, useState} from "react";
+import {NavLink} from "react-router-dom";
 
-const CardItem = ({item}) => {
+const CardItem = ({id, name, sizes, description, category, img, withCheckBox}) => {
+
+    const [price, setPrice] = useState('');
+
+    useEffect(() => {
+        if (sizes) {
+            const size = sizes[0]
+            if (size) {
+                const price = size.price
+                setPrice(price)
+            }
+        }
+
+
+    }, [sizes])
+    console.log(price)
     return (
-        <Col >
-            <div className="strip" >
-                <span><div className="score"><strong>8.9</strong></div></span>
-                <figure style={{height:"170px", width:"160px"}}>
-                    <span className="ribbon off">Spicy</span>
-                    <img src={sample} data-src="img/location_1.jpg" className="img-fluid lazy" alt="" />
-                        <a href="detail-restaurant.html" className="strip_info">
-                            <small>Chicken</small>
-                            <div className="item_title">
-                                <h3>Da Alfredo</h3>
-                                <small>27 Old Gloucester St</small>
-                            </div>
-                        </a>
+        <Col>
+            <div className="strip text-uppercase">
+                <figure className={`card_small`}>
+                    {withCheckBox ? null : (<span className="ribbon off">{price}LE</span>)}
+
+                    <img src={img} data-src="img/location_1.jpg" className="img-fluid lazy" alt=""/>
+                    {withCheckBox ? (null) : (<NavLink to={`/menu-items/${id}`} className="strip_info">
+                        <small><NavLink to={`/menu/${category}`}>{category}</NavLink></small>
+                        <div className="text-center item_title">
+                            <h3>{name}</h3>
+                        </div>
+                    </NavLink>)}
 
                 </figure>
                 {/*<ul><li><span className="take yes">Takeaway</span> <span className="deliv yes">Delivery</span></li></ul>*/}
             </div>
         </Col>
-)
+    )
 }
 
 export default CardItem

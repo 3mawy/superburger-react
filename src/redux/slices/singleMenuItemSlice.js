@@ -1,14 +1,13 @@
 import {createSlice} from '@reduxjs/toolkit'
 import {getSingleMenuItem} from "../remotes_thunk/menuItemsThunk"
-import {useDispatch} from "react-redux";
 
 
 const singleMenuItemSlice = createSlice({
-    name: 'menuItems',
+    name: 'menuItem',
     initialState: {item: {}, status: 'idle'},
     reducers: {},
     extraReducers: {
-        [getSingleMenuItem().pending]: (state) => {
+        [getSingleMenuItem.pending]: (state) => {
             state.status = 'loading'
         },
         [getSingleMenuItem.fulfilled]: (state, action) => {
@@ -21,4 +20,5 @@ const singleMenuItemSlice = createSlice({
     }
 })
 export const selectSingleMenuItem = (state) => state.menuItem
+export const selectSingleMenuItemStatus = (state) => state.menuItem.status
 export default singleMenuItemSlice.reducer

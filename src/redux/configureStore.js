@@ -1,20 +1,21 @@
-import {configureStore} from "@reduxjs/toolkit";
-// import  index from "./reducers/index";
-import nightModeSlice from "./slices/nightModeSlice";
-import languageSlice from "./slices/languageSlice";
-import menuItemsSlice from "./slices/menuItemsSlice";
-import cartSlice from "./slices/cartSlice";
-import singleMenuItemSlice from "./slices/singleMenuItemSlice";
+import {configureStore, getDefaultMiddleware} from "@reduxjs/toolkit";
 
+
+import rootReducer from './rootReducer'
+import {FLUSH, PAUSE, PERSIST, persistReducer, persistStore, PURGE, REGISTER, REHYDRATE,} from 'redux-persist'
+import storage from 'redux-persist/lib/storage'
+
+const persistConfig = {
+    key: 'root',
+    version: 1,
+    storage,
+}
+
+const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 const store = configureStore({
-    reducer: {
-        nightMode: nightModeSlice,
-        language: languageSlice,
-        menuItems: menuItemsSlice,
-        menuItem: singleMenuItemSlice,
-        cart: cartSlice,
-    }
-})
+    reducer: persistedReducer,
+    devTools: true,
 
+})
 export default store

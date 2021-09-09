@@ -1,0 +1,22 @@
+.back-sign {
+    margin-bottom: 4px;
+    margin-right: 13px;
+    font-size: 1.4rem;
+    transition: all .2s ease-in-out;
+    color: rgb(253, 253, 253);
+}
+
+.back-sign:hover {
+    color: rgb(215, 215, 215);
+}
+
+.dark.back-sign {
+    color: #f0802f;
+}
+
+.dark.back-sign:hover {
+    color: rgb(215, 215, 215);
+}
+.ar .back-sign {
+    transform: rotateY(180deg);
+}

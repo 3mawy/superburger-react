@@ -1,0 +1,244 @@
+
+a.btn_filters {
+    border: 2px solid rgba(0, 0, 0, 0.29);
+    display: none;
+    padding: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    height: 35px;
+    position: absolute;
+    z-index: 1500;
+    top: 1.55rem;
+    text-align: left;
+}
+
+.ar a.btn_filters {
+    left: 1.3rem;
+}
+
+.en a.btn_filters {
+    right: 1.3rem;
+}
+
+a.btn_filters.show {
+    left: 1.3rem;
+    right: 1.3rem;
+    top: 2.25rem;
+}
+
+a.btn_filters span {
+    display: none;
+}
+
+a.btn_filters i {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    color: #f5f1f1;
+}
+
+a.btn_filters.dark i {
+    color: #242424;
+
+}
+
+@media (max-width: 991px) {
+
+    a.btn_filters {
+        float: right;
+        display: block !important;
+        margin: -20px 0 0 5px;
+        background: none;
+    }
+}
+
+.filter_col {
+    margin-bottom: 25px;
+    margin-top: 9px;
+}
+
+@media (max-width: 991px) {
+    .dark .filter_col {
+        background-color: #242424;
+    }
+
+    .filter_col {
+        border-radius: 5px;
+        opacity: 0;
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 0;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        right: 0;
+        left: 0;
+    }
+
+    .filter_col.show {
+        padding: 1px 10px;
+        margin-bottom: 8px;
+        top: 0;
+        border: 0;
+        position: unset;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .filter_col {
+        width: 100%;
+    }
+}
+
+.filter_col .inner_bt {
+    text-align: center;
+    display: none;
+    font-weight: 500;
+    padding: 10px;
+    position: relative;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.filter_col .inner_bt a.open_filters {
+    position: absolute;
+    right: -5px;
+    top: 3px;
+    border: 0;
+    padding: 0;
+}
+
+@media (max-width: 991px) {
+    .filter_col .inner_bt {
+        display: block;
+    }
+}
+
+.filter_col .inner_bt i {
+    font-size: 36px;
+    font-size: 2.25rem;
+    color: #999;
+}
+
+.filter_col .inner_bt i:hover {
+    color: #111;
+}
+
+.filter_type {
+    /*border-top: 1px solid #ededed;*/
+    padding: 15px 0 0 15px;
+}
+
+.dark .filter_type {
+    /*border-top: 2px solid #343434;*/
+    padding: 15px 0 0 15px;
+}
+
+.filter_type.last {
+    border-bottom: 3px solid #ededed;
+}
+
+.dark .filter_type.last {
+    border-bottom: 3px solid #343434;
+}
+
+.filter_type label {
+    font-weight: 400;
+}
+
+.filter_type label small {
+    float: right;
+    color: #777;
+    padding-top: 3px;
+}
+
+.filter_type ul {
+    list-style: none;
+    padding: 0 5px 0 5px;
+}
+
+.filter_type h4 a {
+    display: block;
+    font-size: 18px;
+    color: #444;
+    padding: 8px 10px;
+    margin: -5px -5px 0 -5px;
+    line-height: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+/* dark mode */
+
+.filter_col.dark h4 a {
+    color: rgb(236, 236, 236);
+}
+
+
+.filter_type h4 a:after {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-family: 'ElegantIcons';
+    font-size: 26px;
+    font-size: 1.625rem;
+    position: absolute;
+    top: 2px;
+}
+
+.en .filter_type h4 a:after {
+    right: 3px;
+}
+
+.ar .filter_type h4 a:after {
+    left: 3px;
+}
+
+.filter_type h4 a.opened:after {
+    /*content: "\33";*/
+    transform: rotate(180deg);
+}
+
+#sidebar_fixed {
+    background: #eeebeb;
+    border-radius: 9px;
+    /*background: #f3f3f3 url("./img/pattern.svg")repeat scroll center center;*/
+    box-shadow: #dfdfdf 3px 4px;
+}
+
+.dark #sidebar_fixed {
+    background: #242424;
+    border-radius: 9px;
+    box-shadow: #171616 3px 4px;
+}
+
+.filter_type h4 a.closed:after {
+    /*content: "\33";*/
+    transform: rotate(0);
+}
+
+/* Filters full width */
+
+
+.sort_select:after {
+    content: "\2a";
+    font-family: 'ElegantIcons';
+    position: absolute;
+    color: #444;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+@media (min-width: 992px) {
+    #sidebar_fixed.scrolled {
+    position: sticky;
+    top: 4.3rem;
+    margin-bottom: 2rem;
+}
+}
+
+

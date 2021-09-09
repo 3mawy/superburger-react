@@ -1,5 +1,5 @@
 import {createSlice} from '@reduxjs/toolkit'
-import {getMenuItems} from "../remotes_thunk/menuItemsThunk"
+import {getMenuItems, getSingleMenuItem} from "../remotes_thunk/menuItemsThunk"
 
 
 const menuItemsSlice = createSlice({
@@ -12,6 +12,7 @@ const menuItemsSlice = createSlice({
         [getMenuItems.pending]: (state) => {
             state.status = 'loading'
         },
+        // [getMenuItems.fulfilled]: userAdapter.upsertMany,
         [getMenuItems.fulfilled]: (state, action) => {
             state.menuItems = action.payload
             state.status = 'success'
@@ -22,4 +23,6 @@ const menuItemsSlice = createSlice({
     }
 })
 export const selectMenuItems = (state) => state.menuItems
+export const selectItem = (state) => state.menuItem
+
 export default menuItemsSlice.reducer

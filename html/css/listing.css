@@ -112,7 +112,7 @@ a.btn_filters span {
 a.btn_filters i {
   font-size: 21px;
   font-size: 1.3125rem;
-  color: #444;
+  color: #f6f2f2;
 }
 @media (max-width: 991px) {
   a.btn_filters {
@@ -205,9 +205,10 @@ a.btn_filters i {
 }
 
 .filter_type {
-  border-top: 1px solid #ededed;
+  border-top: 2px solid #ededed;
   padding: 15px 0 0 0;
 }
+
 .filter_type.last {
   border-bottom: 1px solid #ededed;
   margin-bottom: 30px;

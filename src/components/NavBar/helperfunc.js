@@ -2,16 +2,17 @@
 //     setToggleState(state === "" ? "show" : "");
 // }
 export const cartTotal = (cartItems) => {
+    console.log("cart total")
     let total = 0;
     cartItems.forEach(function (item) {
-        total = total + (parseInt(item.price) * parseInt(item.count))
+        total = total + (parseInt(item.price) * parseInt(item.quantity))
     });
     return total
 };
 export const cartTotalCount = (cartItems) => {
     let totalCount = 0;
     cartItems.forEach(function (item) {
-        totalCount = totalCount + parseInt(item.count)
+        totalCount = totalCount + parseInt(item.quantity)
     });
     return totalCount
 };
