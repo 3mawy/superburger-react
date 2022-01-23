@@ -1,5 +1,7 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import {getRefreshFromStore, getTokenFromStore} from "./helper";
+import {host} from "./helper";
+
 import {dispatch} from "react-hot-toast";
 
 const requestOptions = {
@@ -9,7 +11,7 @@ const requestOptions = {
 // export const getCurrentUserData = createAsyncThunk(
 //     'user/getData',
 //     async (id) => {
-//         const response = await fetch(`http://127.0.0.1:8000/users/${id}`).then((res) =>
+//         const response = await fetch(`${host}/users/${id}`).then((res) =>
 //             res.json()
 //         )
 //         return response
@@ -20,7 +22,7 @@ export const signupUser = createAsyncThunk(
     async ({name, username, email, password}, thunkAPI) => {
         try {
             const response = await fetch(
-                'http://localhost:8000/users/',
+                `${host}/users/`,
                 {
                     method: 'POST',
                     headers: {
@@ -57,7 +59,7 @@ export const loginUser = createAsyncThunk(
     async ({username, password}, thunkAPI) => {
         try {
             const response = await fetch(
-                'http://localhost:8000/api/token/',
+                `${host}/api/token/`,
                 {
                     method: 'POST',
                     headers: {
@@ -91,7 +93,7 @@ export const loginUser = createAsyncThunk(
 export const getCurrentUserData = createAsyncThunk(
     'User/getDetails',
     async () => {
-        const response = await fetch(`http://127.0.0.1:8000/current-customer`, requestOptions).then((res) =>
+        const response = await fetch(`${host}/current-customer`, requestOptions).then((res) =>
             res.json()
         )
         return response.results[0]
@@ -102,7 +104,7 @@ export const getCurrentUserData = createAsyncThunk(
 export const updateUserData = createAsyncThunk(
     'User/updateDetails',
     async ({edits}) => {
-        const response = await fetch(`http://127.0.0.1:8000/current-user`,
+        const response = await fetch(`${host}/current-user`,
                 {
                     method: 'PATCH',
                     headers: {
@@ -126,7 +128,7 @@ export const refreshToken = createAsyncThunk(
             },
             body: JSON.stringify({'refresh': getRefreshFromStore()})
         };
-        const response = await fetch(`http://127.0.0.1:8000/api/token/refresh/`, requestOptions).then((res) =>
+        const response = await fetch(`${host}/api/token/refresh/`, requestOptions).then((res) =>
             res.json()
         )
         localStorage.setItem('token', response['access']);
@@ -148,7 +150,7 @@ export const socialAuth = createAsyncThunk(
                     }
                 )
             };
-            const response = await fetch(`http://localhost:8000/api/login/social/jwt-pair/`, requestOptions).then((res) =>
+            const response = await fetch(`${host}/api/login/social/jwt-pair/`, requestOptions).then((res) =>
                 res.json()
             )
             console.log('response', response);

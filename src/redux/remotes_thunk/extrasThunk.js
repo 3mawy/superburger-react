@@ -1,5 +1,5 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
-import {getTokenFromStore} from "./helper";
+import {getTokenFromStore, host} from "./helper";
 
 const requestOptions = {
     headers: {'Authorization': getTokenFromStore()},
@@ -8,7 +8,7 @@ const requestOptions = {
 export const getExtras = createAsyncThunk(
     'extras/getExtras',
     async () => {
-        const response = await fetch(`http://127.0.0.1:8000/extras`, requestOptions)
+        const response = await fetch(`${host}/extras`, requestOptions)
             .then((res) =>
             res.json()
         )

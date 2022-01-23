@@ -1,5 +1,6 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import {getTokenFromStore} from "./helper";
+import {host} from "./helper";
 
 const requestOptions = {
     headers: {'Authorization': getTokenFromStore()},
@@ -8,7 +9,7 @@ export const getOrder = createAsyncThunk(
     'order/getOrder',
     async (orderId) => {
 
-        const response = await fetch(`http://127.0.0.1:8000/placed-orders/${orderId}`, requestOptions).then((res) =>
+        const response = await fetch(`${host}/placed-orders/${orderId}`, requestOptions).then((res) =>
             res.json()
         )
         return response
@@ -18,7 +19,7 @@ export const getOrder = createAsyncThunk(
 export const getCurrentUserOrders = createAsyncThunk(
     'order/getUserOrders ',
     async () => {
-        const response = await fetch(`http://127.0.0.1:8000/placed-orders`, requestOptions)
+        const response = await fetch(`${host}/placed-orders`, requestOptions)
             .then((res) => res.json()
             )
         return response
@@ -37,7 +38,7 @@ export const postOrder = createAsyncThunk(
             body: JSON.stringify(order)
         };
         console.log(order)
-        const response = await fetch(`http://localhost:8000/order-create`, requestOptions)
+        const response = await fetch(`${host}/order-create`, requestOptions)
             .then((res) => res.json()
             )
         return response

@@ -1,5 +1,5 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
-import {getTokenFromStore} from "./helper";
+import {getTokenFromStore, host} from "./helper";
 
 const requestOptions = {
     // headers: {'Authorization': getTokenFromStore()},
@@ -8,7 +8,7 @@ const requestOptions = {
 export const getCategories = createAsyncThunk(
     'categories/getCategories',
     async () => {
-        const response = await fetch(`http://127.0.0.1:8000/categories`, requestOptions)
+        const response = await fetch(`${host}/categories`, requestOptions)
             .then((res) =>
             res.json()
         )

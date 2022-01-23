@@ -1,10 +1,11 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
+import {host} from "./helper";
 
 
 export const getCarouselImages = createAsyncThunk(
     'carousel/getImages',
     async () => {
-        const response = await fetch(`http://127.0.0.1:8000/carousel-images`)
+        const response = await fetch(`${host}/carousel-images`)
             .then((res) =>
             res.json()
         )
