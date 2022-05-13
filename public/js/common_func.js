@@ -125,7 +125,7 @@
 	 return false;
 	});
 
-	// Cart Dropdown Hidden From tablet
+	// CartItem Dropdown Hidden From tablet
 	$(window).bind('load resize', function () {
 		var width = $(window).width();
 		if (width <= 768) {

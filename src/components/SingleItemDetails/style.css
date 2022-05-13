@@ -1,0 +1,72 @@
+.size_indicators {
+    background-color: rgb(255, 148, 70);
+    border-radius: 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.size_indicators:hover {
+    background-color: rgb(255, 137, 57);
+
+}
+
+.size_indicators span {
+    font-size: 1.2rem;
+    color: #f8f8f8;
+    text-shadow: rgba(54, 88, 128, 0.18) 2px 2px 0;
+    padding-right: 5px;
+}
+
+.size_indicators input {
+    cursor: pointer;
+
+}
+
+.dark .card {
+    background-color: #242424;
+}
+
+.dark h4 {
+    color: #ebe3e3;
+}
+
+.dark .card-header {
+    background-color: #444040 !important;
+}
+
+.dark h5 a {
+    color: #ebe3e3 !important;
+}
+
+.dark .accordion_2 .card .card-header {
+    border-bottom: 1px solid #504a4a;
+}
+
+.extras_font {
+    font-size: 1.3rem;
+    color: #3d3b3b;
+}
+.extras-layout{
+transition: all 0.4s ease-in-out;
+
+}
+.extras-layout:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.extras-layout .container_check .checkmark {
+    top: 6px;
+    left: 4px;
+}
+.padding-fix-extras {
+    padding-left: 1.8rem;
+}
+.imgbox_fix_center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}

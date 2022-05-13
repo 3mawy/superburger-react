@@ -1,31 +1,31 @@
-import Button from "react-bootstrap/Button";
-import sample from '../sample.jpeg'
-import {Col, Container, Row} from "react-bootstrap";
-import CardItem from "../CardItem";
+import "./style.css"
+import {Container, Row} from "react-bootstrap";
 import CardWithText from "./CardWithText";
+import PropTypes from "prop-types";
+import Loading from "../../Loading/Loading";
 
-let items = [
-    { id: 1, item: "Dog" },
-    { id: 2, item: "Bird" },
-    { id: 3, item: "Cat" },
-    { id: 4, item: "Mouse" },
-    { id: 5, item: "Horse" },
-    { id: 6, item: "Horse" },
-    { id: 7, item: "Horse" },
-    { id: 8, item: "Horse" },
-    { id: 9, item: "Horse" },
-  ];
-let res = items.map(o => o.item);
 
-const CardWithTextList = (props) => {
+const CardWithTextList = ({offers, items, loading}) => {
+
+
     return (
-        <Container fluid className="p-0">
-            <br/>
-            <Row  className="justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2} >
-            {res.map((item, index) => <CardWithText key={item.id} name={"Cheesy Cheesy"} price={"45"} color={props.color}>{item}</CardWithText>)}
-            </Row>
-        </Container>
-)
-}
+        <div >
+            {items ? (<Container fluid className="p-0">
 
+                <Row className="padding-15-8 justify-content-end" xs={1} sm={2} md={2} lg={2} xl={2}>
+                    {items.map((item) =>
+                        <CardWithText key={item.id} id={item.id}
+                                      name={item.name} name_ar={item.name_ar} sizes={item.sizes}
+                                      desc={item.description} desc_ar={item.description_ar} img={item.image.image} offerPrice={item.price}>
+                        </CardWithText>)
+                    }
+                </Row>
+            </Container>) : (<Loading className={`mt-5`}/>)}
+        </div>
+
+    )
+}
+CardWithTextList.propTypes = {
+    items: PropTypes.array
+}
 export default CardWithTextList

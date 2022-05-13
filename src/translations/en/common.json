@@ -1,0 +1,21 @@
+{
+  "home": {
+    "trendingTitle": "Trending Sandwiches"
+  },
+  "navbar": {
+    "aboutUs": "ABOUT US!",
+    "contactUs": "CONTACT US",
+    "menu": "MENU",
+    "offers": "OFFERS"
+  },
+  "cart": {
+    "viewCart": "View Cart",
+    "checkOut": "CheckOut"
+  },
+  "categories": {
+    "beef": "BEEF",
+    "chicken": "CHICKEN",
+    "sides": "SIDES",
+    "specials": "SPECIALS"
+  }
+}

@@ -1,25 +1,47 @@
-.night-mode-icon {
-  color: #ff8416;
-  margin: 1.3rem;
-  margin-left: 2rem !important;
-  font-size: 1.4rem;
-  position: absolute;
-  z-index: 99999999
+
+
+.form-control.dark {
+    background-color: #444444;
+    border: 1px solid #454444;
+
 }
-.night-mode-icon.dark {
-  color: #ede5e5;
+
+.form-control.dark:focus {
+    background-color: #444444;
+    border: 1px solid #454444;
+    box-shadow: 0 0 0 .1rem rgb(240, 128, 47);
+
 }
-.night-mode-icon:hover {
-  color: #c43a41 !important;
+.concert-one {
+    font-family: 'Concert One', cursive;
 }
-.night-mode-icon.dark:hover {
-  color: #c43a41 !important;
+.order_button {
+    font-family: 'Concert One', cursive;
+
+}
+
+.concert_one_font {
+    font-family: 'Concert One', cursive;
+
+}
+
+a.order_button {
+    font-size: 1.5rem;
+
+}
+.overflow-scroll {
+    overflow-y: scroll;
 }
 @media (max-width: 991px) {
-  .night-mode-icon {
-  margin: 1rem;
-  margin-left: 3.5rem !important;
-  font-size: 1.15rem;
-  right: 4.4rem
-  }
+    .order_button.fixed_mobile {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        z-index: 5555;
+        height: 3.1rem;
+        border-radius: 8px;
+        padding-top: 6px;
+    }
+
 }

@@ -1,6 +1,6 @@
 import {Col, Container, Row} from "react-bootstrap";
 import CardItem from "./CardItem";
-import CardWithText from "./CardWithText/CardWithText";
+import Loading from "../Loading/Loading";
 
 let items = [
     { id: 1, item: "Dog" },
@@ -15,14 +15,15 @@ let items = [
   ];
 let res = items.map(o => o.item);
 
-const CardList = (props) => {
-                    // let arrays = SpliceItemsIntoArrays(items, props.row_size)
+const CardList = ({items, row_size}) => {
                     return (
                         <Container >
-                            {/*<br/>*/}
-                            <Row  className="justify-content-end" lg={props.row_size} md={3} sm={3} xs={2}>
-                                {res.map((item, index) => <CardItem key={item.id}>{item}</CardItem>)}
-                            </Row>
+                            {items ? (
+                            <Row  className="justify-content-end" lg={row_size} md={3} sm={3} xs={2}>
+                                {items.map((item) =>
+                                    <CardItem key={item.id} name={item.name} sizes={item.sizes} img={item.image.image}>
+                                    </CardItem>)}
+                            </Row>):(<Loading/>)}
                         </Container>
                     )
 }

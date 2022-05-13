@@ -1,5 +1,10 @@
-
- div.container-fix{
-   padding-left:2rem !important;
-   padding-right:2rem !important;
- }
+    div.container-fix {
+        padding-left: .7rem !important;
+        padding-right: .7rem !important;
+    }
+@media (min-width: 768px) {
+    div.container-fix {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}

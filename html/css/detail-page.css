@@ -47,6 +47,9 @@
   -ms-border-radius: 3px;
   border-radius: 3px;
 }
+.dark .detail_page_head .title ul.tags li a {
+  border: 2px solid #323232;
+}
 .detail_page_head .title ul.tags li a:hover {
   color: #e54750;
 }

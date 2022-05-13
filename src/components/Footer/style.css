@@ -7,13 +7,12 @@
   }
 }
 footer {
-  background-color: #f6f1d3;
-  padding: 65px 0 0 0;
+  background-color: #eee;
+  padding: 10px 0 0 0;
   position: relative;
 }
 footer.dark {
   background-color: #242424;
-  padding: 65px 0 0 0;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -65,7 +64,7 @@ footer .contacts ul li i {
   position: absolute;
   top: 0;
   left: 0;
-  color: #e54750;
+  color: #f0802f;
   line-height: 1;
 }
 footer h3 {

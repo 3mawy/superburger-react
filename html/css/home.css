@@ -64,7 +64,7 @@
 .owl-theme.categories_carousel .item a span,
 .item_version_2 a span {
   position: absolute;
-  right: 15px;
+  left: 15px;
   top: 15px;
   display: inline-block;
   line-height: 34px;
@@ -336,18 +336,7 @@
     min-height: inherit;
   }
 }
-.list_home ul li a figure {
-  -webkit-border-radius: 5px 0 0 5px;
-  -moz-border-radius: 5px 0 0 5px;
-  -ms-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px;
-  width: 200px;
-  height: 130px;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+
 @media (max-width: 1199px) {
   .list_home ul li a figure {
     width: 120px;

@@ -1,5 +1,15 @@
 import "./style.css"
+import {useDispatch, useSelector} from "react-redux";
+import {selectColorMode} from "../../redux/slices/nightModeSlice";
+import {resetOrder} from "../../redux/slices/orderSlice";
+import {resetCart} from "../../redux/slices/cartSlice";
+
 const ConfirmedOrder = () => {
+    const colorMode = useSelector(selectColorMode)
+    const dispatch = useDispatch();
+
+    dispatch(resetOrder())
+    dispatch(resetCart())
     return (
         <div className="container margin_60_40">
             <div className="row justify-content-center">

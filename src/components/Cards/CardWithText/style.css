@@ -1,19 +1,24 @@
-a:hover{
-    color: #1e1d1d!important;
+a:hover {
+    color: #1e1d1d !important;
 }
-a.dark:hover{
+
+a.dark:hover {
     color: #d5c9c9 !important;
 }
+
 .card-with-side-text a {
     color: #1e1d1d;
 }
+
 .card-with-side-text.dark a {
     color: #efeaea;
 }
-.img-wrapper{
-    overflow:hidden;
+
+.img-wrapper {
+    overflow: hidden;
 
 }
+
 img.hover-zoom {
     width: 160px;
     height: 150px;
@@ -22,9 +27,11 @@ img.hover-zoom {
     transition: all 0.3s ease-in-out;
     -webkit-backface-visibility: hidden;
 }
+
 img.hover-zoom:hover {
     transform: scale(1.1);
 }
+
 .card-with-side-text {
     box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.05);
     transition: all 0.3s ease-in-out;
@@ -33,33 +40,99 @@ img.hover-zoom:hover {
     border: 0;
     /*-webkit-backface-visibility: hidden;*/
 }
+
 .card-with-side-text.dark {
     background: rgb(36, 36, 36);
 }
+
 .card-with-side-text.dark:hover {
     background: rgb(43, 43, 43);
 }
+
 .card-with-side-text:hover {
     box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.1);
     background: rgb(234, 233, 233);
     /*transform: scale(1.01);*/
 }
-.card-text{
+
+.card-text {
     font-size: 13px;
 }
 
+.dropdown_sizes {
+    z-index: 99999;
+    position: absolute !important;
+    right: 1rem;
+    bottom: 4rem;
+}
+
+.order_btn {
+    padding: 2px 13px 10px !important;
+    font-size: 1.3rem !important;
+    margin-top: 6px;
+}
+
+.relative_z99 {
+    position: relative;
+    z-index: 99999;
+}
+
+.clickable_card {
+    height: 6.2rem;
+}
+
+.size_select {
+    width: 1rem;
+    height: 2.1rem;
+    text-transform: uppercase;
+}
+
+.sandwich_name {
+    margin-top: .3rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600 !important;
+    color: #3d3d3d;
+}
+.padding-15-8 {
+    padding: 15px 8px;
+}
+.ar .order_row_fix {
+    justify-content: center;
+}
 @media screen and (max-width: 769px) {
-    img.hover-zoom{
+    img.hover-zoom {
         width: 120px;
     }
+
+    .clickable_card {
+        height: 6.5rem;
+    }
+
+    .order_btn {
+        padding: 2px 13px 10px !important;
+        margin-top: 6px;
+        font-size: 1.1rem !important;
+    }
+
+    .sandwich_price {
+        font-size: 1rem;
+    }
+
+    .size_select {
+        width: 1rem;
+        height: 2.1rem;
+    }
 }
+
 @media screen and (min-width: 576px) and (max-width: 639px) {
-    img.hover-zoom{
+    img.hover-zoom {
         width: 100px;
     }
 }
+
 @media screen and (min-width: 370px) and (max-width: 575px) {
-    img.hover-zoom{
+    img.hover-zoom {
         width: 150px;
     }
 }

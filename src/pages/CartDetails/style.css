@@ -1,0 +1,30 @@
+.cart_text {
+    font-size: 1.3rem;
+
+}
+
+.add_more_items_button {
+    color: rgb(240, 128, 47);
+    font-size: 1rem;
+    text-align: end;
+    padding-top: 5px;
+
+}
+
+.box_order_form.dark .add_more_items_button:hover {
+    color: rgb(237, 229, 229) !important;
+
+}
+
+.cart_margin_fix{
+      padding-top: 65px;
+  padding-bottom: 20px;
+
+}
+@media (max-width: 991px) {
+    .cart_margin_fix{
+      padding-top: 35px;
+  padding-bottom: 20px;
+
+}
+}
